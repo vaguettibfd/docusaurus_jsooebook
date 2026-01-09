@@ -1,5 +1,6 @@
 ---
 title: Ficha Catalográfica
+slug: ficha
 ---
 
 ## Ficha Catalográfica

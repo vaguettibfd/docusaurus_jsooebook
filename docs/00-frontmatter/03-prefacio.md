@@ -1,5 +1,6 @@
 ---
 title: Prefácio
+slug: prefacio
 ---
 
 ## Prefácio
