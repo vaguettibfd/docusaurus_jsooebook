@@ -3,7 +3,10 @@ sidebar_position: 1
 slug: /ebook
 ---
 
-# Indice do E-Book
+# Introdução
+
+Para acessar maiores detalhes do ebook utilize **[Dados Pré-textuais](/docs/capa)**
+
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
