@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# E-book Intro
+# Indice do E-Book
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
