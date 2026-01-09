@@ -1,6 +1,6 @@
 ---
 title: Capa
-slug: capa
+slug: /capa
 ---
 
 # JavaScript Orientado a Objetos  

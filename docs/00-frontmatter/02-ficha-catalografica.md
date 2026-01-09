@@ -1,6 +1,6 @@
 ---
 title: Ficha Catalográfica
-slug: ficha
+slug: /ficha
 ---
 
 ## Ficha Catalográfica

@@ -1,6 +1,6 @@
 ---
 title: Prefácio
-slug: prefacio
+slug: /prefacio
 ---
 
 ## Prefácio

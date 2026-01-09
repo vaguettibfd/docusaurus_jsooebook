@@ -1,6 +1,6 @@
 ---
 title: Índice
-slug: indice
+slug: /indice
 ---
 
 ## Indice de Conteúdos
