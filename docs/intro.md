@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /ebook
 ---
 
 # Indice do E-Book

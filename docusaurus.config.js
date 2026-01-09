@@ -90,13 +90,14 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
+          /*{
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'E-Book',
           },
-          /*{to: '/blog', label: 'Blog', position: 'left'},*/
+          {to: '/blog', label: 'Blog', position: 'left'},*/
+          { to: '/docs/ebook', label: 'E-Book', position: 'left' },
           {
             href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
             label: 'GitHub',
