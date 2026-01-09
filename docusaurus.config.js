@@ -52,7 +52,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        /*
+        
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -67,7 +67,7 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },*/
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -94,11 +94,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'E-Book',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
             label: 'GitHub',
             position: 'right',
           },
