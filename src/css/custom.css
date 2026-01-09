@@ -43,3 +43,8 @@ pre code .token-line::before {
   text-align: right;
   opacity: 0.5;
 }
+
+/* Oculta elementos pré-textuais da sidebar */
+.frontmatter-hidden {
+  display: none;
+}
