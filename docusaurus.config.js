@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'JavaSCript Orientado a Objetos - da Prática a Teoria',
-  tagline: 'Dinosaurs are cool',
+  title: 'JavaSCript Orientado a Objetos',
+  tagline: 'Da Prática a Teoria',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -52,6 +52,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        /*
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -66,7 +67,7 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
+        },*/
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,9 +84,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: 'JavaScript Orientado a Objetos',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'JavaScript Orientado a Objetos Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -141,7 +142,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
               },
             ],
           },
