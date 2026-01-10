@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'JavaSCript Orientado a Objetos',
-  tagline: 'Da Prática a Teoria',
+  title: 'JavaSCript e Orientação a Objetos',
+  tagline: 'Série Didática: Pensando Software com JavaScript',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
