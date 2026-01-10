@@ -87,7 +87,7 @@ const config = {
         title: 'JavaScript e Orientação a Objetos',
         logo: {
           alt: 'JavaScript e Orientação a Objetos - Logo',
-          src: 'img/logo.svg',
+          src: 'img/ebook1-logo.svg',
         },
         items: [
           /*{

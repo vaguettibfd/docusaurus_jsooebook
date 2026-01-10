@@ -15,7 +15,7 @@ export default function Home() {
             
             {/* LOGO DO E-BOOK */}
             <img
-              src="/img/ebook-logo.png"
+              src="/img/ebook1-logo.svg"
               alt="Logo do e-book JavaScript e Orientação a Objetos"
               style={{
                 maxWidth: 220,
