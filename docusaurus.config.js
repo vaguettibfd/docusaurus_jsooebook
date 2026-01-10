@@ -84,9 +84,9 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'JavaScript Orientado a Objetos',
+        title: 'JavaScript e Orientação a Objetos',
         logo: {
-          alt: 'JavaScript Orientado a Objetos Logo',
+          alt: 'JavaScript e Orientação a Objetos - Logo',
           src: 'img/logo.svg',
         },
         items: [
