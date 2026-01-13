@@ -1,7 +1,8 @@
 {
   "label": "Tutorial - Extras",
-  "position": 4,
+  "position": 5,
   "link": {
     "type": "generated-index"
-  }
+  },
+  "className": "frontmatter-hidden"
 }
