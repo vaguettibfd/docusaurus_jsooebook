@@ -108,3 +108,9 @@ As funções são acessadas por meio da notação de objeto.
 ## 🔗 Links Complementares
 
 - https://youtu.be/glxCWejs2kk
+
+--- 
+
+## 📚 Exercícios de Fixação
+
+- https://js-oo-ebook.vercel.app/docs/tutorial-exercicios/programacao_estruturada

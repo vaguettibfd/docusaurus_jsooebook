@@ -124,3 +124,9 @@ Importa a classe exportada anteriormente.
 ## 🔗 Links Complementares
 
 - https://youtu.be/Ah4b0Cj1c6E
+
+---
+
+## 📚 Exercícios de Fixação
+
+- https://js-oo-ebook.vercel.app/docs/tutorial-exercicios/orientacao_objetos
