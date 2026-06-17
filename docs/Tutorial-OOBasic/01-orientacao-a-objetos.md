@@ -1,4 +1,4 @@
-# Orientação a Objetos (Declaração e Uso)
+# 📘 Orientação a Objetos (Declaração e Uso)
 
 Observe o seguinte código de exemplo relativo à declaração de classes e sua utilização em JavaScript.
 

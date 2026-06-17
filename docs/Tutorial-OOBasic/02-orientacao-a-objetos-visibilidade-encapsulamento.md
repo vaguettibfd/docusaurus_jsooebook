@@ -1,6 +1,6 @@
 
 
-# Orientação a Objetos – Visibilidade e Encapsulamento (Declaração e Uso)
+# 📘 Orientação a Objetos – Visibilidade e Encapsulamento (Declaração e Uso)
 
 Observe o seguinte código de exemplo relativo à declaração da classe **Aluno**, definição da visibilidade de atributos e métodos, bem como os objetivos do encapsulamento.
 

@@ -1,6 +1,5 @@
-# 📘 Apostila de FrontEnd (JavaScript)
 
-# Orientação a Objetos – Encapsulamento (+ Condicional) e Herança (Declaração e Uso)
+# 📘 Orientação a Objetos – Encapsulamento (+ Condicional) e Herança (Declaração e Uso)
 
 ## Introdução
 
