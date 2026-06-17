@@ -1,4 +1,4 @@
-# 📚 Exercício de Fixação – Orientação a Objetos em JavaScript
+# 📚 Exercício de Fixação 02 – Orientação a Objetos em JavaScript
 
 ## 🎯 Contexto do Problema
 

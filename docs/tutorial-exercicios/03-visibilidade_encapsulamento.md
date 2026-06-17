@@ -1,4 +1,4 @@
-# 📚 Exercício de Fixação – Visibilidade e Encapsulamento em JavaScript
+# 📚 Exercício de Fixação 03 – Visibilidade e Encapsulamento em JavaScript
 
 ## 🎯 Contexto do Problema
 
