@@ -13,80 +13,80 @@ JavaScript.
 **Arquivo:** `PJ.js`
 
 ``` javascript
-01 // Arquivo criado em projeto no www.stackblitz.com denominado PJ.js (Pessoa Jurídica)
-02 // Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
-03 // Objetivo do exemplo: demonstrar conceitos de Herança e sobrescrita de métodos,
-04 // bem como encapsulamento adicionados de condicionais e operadores de comparação
-05
-06 const Pessoa = require('./Pessoa');
-07
-08 class PJ extends Pessoa {
-09
-10   #cnpj;
-11
-12   setCNPJ(cnpj) {
-13
-14     /*
-15      Operadores de comparação:
-16      <  : menor que
-17      >  : maior que
-18      <= : menor ou igual que
-19      >= : maior ou igual que
-20     */
-21
-22     if (cnpj) {
-23
-24       if (cnpj.length < 18) {
-25         return false;
-26       }
-27
-28       this.#cnpj = cnpj;
-29       return true;
-30
-31     } else {
-32
-33       return false;
-34
-35     }
-36
-37   }
-38
-39   getCNPJ() {
-40     return this.#cnpj;
-41   }
-42
-43   // Sobrescrita do método setEmail()
-44   setEmail(email) {
-45
-46     /*
-47      Operadores de comparação:
-48      ==  : igualdade frouxa
-49      === : igualdade estrita
-50      !=  : diferença frouxa
-51      !== : diferença estrita
-52     */
-53
-54     if (email !== '') {
-55
-56       if (email.includes('@')) {
-57
-58         super.setEmail(email);
-59
-60         return true;
-61
-62       }
-63
-64     } else {
-65
-66       return false;
-67
-68     }
-69
-70   }
-71
-72 }
-73
-74 module.exports = PJ;
+// Arquivo criado em projeto no www.stackblitz.com denominado PJ.js (Pessoa Jurídica)
+// Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
+// Objetivo do exemplo: demonstrar conceitos de Herança e sobrescrita de métodos,
+// bem como encapsulamento adicionados de condicionais e operadores de comparação
+
+const Pessoa = require('./Pessoa');
+
+class PJ extends Pessoa {
+
+   #cnpj;
+
+   setCNPJ(cnpj) {
+
+     /*
+      Operadores de comparação:
+      <  : menor que
+      >  : maior que
+      <= : menor ou igual que
+      >= : maior ou igual que
+     */
+
+     if (cnpj) {
+
+       if (cnpj.length < 18) {
+         return false;
+       }
+
+       this.#cnpj = cnpj;
+       return true;
+
+     } else {
+
+       return false;
+
+     }
+
+   }
+
+   getCNPJ() {
+     return this.#cnpj;
+   }
+
+   // Sobrescrita do método setEmail()
+   setEmail(email) {
+
+     /*
+      Operadores de comparação:
+      ==  : igualdade frouxa
+      === : igualdade estrita
+      !=  : diferença frouxa
+      !== : diferença estrita
+     */
+
+     if (email !== '') {
+
+       if (email.includes('@')) {
+
+         super.setEmail(email);
+
+         return true;
+
+       }
+
+     } else {
+
+       return false;
+
+     }
+
+   }
+
+ }
+
+ module.exports = PJ;
 ```
 
 ------------------------------------------------------------------------
