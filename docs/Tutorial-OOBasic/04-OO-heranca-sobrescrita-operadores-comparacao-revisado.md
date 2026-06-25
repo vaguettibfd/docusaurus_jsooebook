@@ -445,106 +445,106 @@ arquivo `usaPessoas.js`, responsável pela instanciação dos objetos
 **Arquivo:** `usaPessoas.js`
 
 ``` javascript
-01 // Arquivo criado em projeto no www.stackblitz.com denominado usaPessoas.js
-02 // Arquivo criado dentro de uma pasta /objetos na raiz do projeto
-03 // Objetivo do exemplo: demonstrar a utilização dos conceitos de encapsulamento
-04 // com adição de condicionais e Herança
-05 // Classes Pessoa, PF e PJ disponíveis na pasta /objetos/pessoas
-06
-07 console.log("==== Objeto Pessoa =====");
-08
-09 const Pessoa = require('./pessoas/Pessoa');
-10
-11 const x = new Pessoa();
-12
-13 // resposta = x.setNome('Leandro');
-14 resposta = x.setNome('');
-15
-16 console.log(resposta);
-17
-18 if (resposta) {
-19   console.log(x.getNome());
-20 } else {
-21   console.log("Nome vazio");
-22 }
-23
-24 resposta = x.setEmail('vaguetti@gmail.com');
-25
-26 console.log(resposta);
-27
-28 if (resposta) {
-29   console.log(x.getEmail());
-30 } else {
-31   console.log("E-mail vazio");
-32 }
-33
-34 // ===================================
-35 console.log("==== Objeto PF =====");
-36
-37 const PF = require('./pessoas/PF');
-38
-39 const y = new PF();
-40
-41 resposta = y.setNome('Pedro');
-42 console.log(resposta);
-43
-44 if (resposta) {
-45   console.log(y.getNome());
-46 } else {
-47   console.log("Nome vazio");
-48 }
-49
-50 resposta = y.setEmail('');
-51 console.log(resposta);
-52
-53 if (resposta) {
-54   console.log(y.getEmail());
-55 } else {
-56   console.log("Email vazio");
-57 }
-58
-59 resposta = y.setCPF('123456789-10');
-60 console.log(resposta);
-61
-62 if (resposta) {
-63   console.log(y.getCPF());
-64 } else {
-65   console.log("CPF vazio");
-66 }
-67
-68 // ===================================
-69 console.log("==== Objeto PJ =====");
-70
-71 const PJ = require('./pessoas/PJ');
-72
-73 const z = new PJ();
-74
-75 resposta = z.setNome('Empresa ABC');
-76 console.log(resposta);
-77
-78 if (resposta) {
-79   console.log(z.getNome());
-80 } else {
-81   console.log("Nome vazio");
-82 }
-83
-84 resposta = z.setEmail('contato@empresa.com');
-85 console.log(resposta);
-86
-87 if (resposta) {
-88   console.log(z.getEmail());
-89 } else {
-90   console.log("E-mail inválido");
-91 }
-92
-93 resposta = z.setCNPJ('12.345.678/0001-90');
-94 console.log(resposta);
-95
-96 if (resposta) {
-97   console.log(z.getCNPJ());
-98 } else {
-99   console.log("CNPJ inválido");
-100 }
+// Arquivo criado em projeto no www.stackblitz.com denominado usaPessoas.js
+// Arquivo criado dentro de uma pasta /objetos na raiz do projeto
+// Objetivo do exemplo: demonstrar a utilização dos conceitos de encapsulamento
+// com adição de condicionais e Herança
+// Classes Pessoa, PF e PJ disponíveis na pasta /objetos/pessoas
+
+ console.log("==== Objeto Pessoa =====");
+
+ const Pessoa = require('./pessoas/Pessoa');
+
+ const x = new Pessoa();
+
+ // resposta = x.setNome('Leandro');
+ resposta = x.setNome('');
+
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(x.getNome());
+ } else {
+   console.log("Nome vazio");
+ }
+
+ resposta = x.setEmail('vaguetti@gmail.com');
+
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(x.getEmail());
+ } else {
+   console.log("E-mail vazio");
+ }
+
+// ===================================
+ console.log("==== Objeto PF =====");
+
+const PF = require('./pessoas/PF');
+
+const y = new PF();
+
+ resposta = y.setNome('Pedro');
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(y.getNome());
+ } else {
+   console.log("Nome vazio");
+ }
+
+ resposta = y.setEmail('');
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(y.getEmail());
+ } else {
+   console.log("Email vazio");
+ }
+
+ resposta = y.setCPF('123456789-10');
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(y.getCPF());
+ } else {
+   console.log("CPF vazio");
+ }
+
+ // ===================================
+ console.log("==== Objeto PJ =====");
+
+ const PJ = require('./pessoas/PJ');
+
+ const z = new PJ();
+
+ resposta = z.setNome('Empresa ABC');
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(z.getNome());
+ } else {
+   console.log("Nome vazio");
+ }
+
+ resposta = z.setEmail('contato@empresa.com');
+  console.log(resposta);
+
+ if (resposta) {
+   console.log(z.getEmail());
+ } else {
+   console.log("E-mail inválido");
+ }
+ 
+ resposta = z.setCNPJ('12.345.678/0001-90');
+ console.log(resposta);
+
+ if (resposta) {
+   console.log(z.getCNPJ());
+ } else {
+   console.log("CNPJ inválido");
+ }
 ```
 
 ------------------------------------------------------------------------
