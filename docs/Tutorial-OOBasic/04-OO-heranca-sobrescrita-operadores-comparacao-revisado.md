@@ -1094,4 +1094,4 @@ próprias, reaproveitando comportamentos já existentes em classes base.
 
 ## 📚 Exercícios de Fixação
 
--   https://js-oo-ebook.vercel.app/docs/tutorial-exercicios/heranca_sobrescrita_operadores_comparacao
+-   https://js-oo-ebook.vercel.app/docs/tutorial-exercicios/heranca-sobrescrita-validacao-exercicio
