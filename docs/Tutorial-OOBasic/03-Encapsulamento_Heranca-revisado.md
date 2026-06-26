@@ -14,44 +14,43 @@ atributos.
 **Arquivo:** `Pessoa.js`
 
 ``` javascript
-01 // Arquivo criado em projeto no www.stackblitz.com denominado Pessoa.js
-02 // Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
-03 // Objetivo do exemplo: demonstrar conceitos de encapsulamento adicionados de condicionais
+// Arquivo criado em projeto no www.stackblitz.com denominado Pessoa.js
+// Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
+// Objetivo do exemplo: demonstrar conceitos de encapsulamento adicionados de condicionais
 
-04 class Pessoa {
+class Pessoa {
 
-05   #nome;
-06   #email;
+   #nome;
+   #email;
 
-07   setNome(nome) {
-08     if (nome) {
-09       this.#nome = nome;
-10       return true;
-11     } else {
-12       return false;
-13     }
-14   }
+   setNome(nome) {
+     if (nome) {
+       this.#nome = nome;
+       return true;
+     } else {
+       return false;
+     }
+   }
 
-15   getNome() {
-16     return this.#nome;
-17   }
+   getNome() {
+     return this.#nome;
+   }
 
-18   setEmail(email) {
-19     if (email) {
-20       this.#email = email;
-21       return true;
-22     } else {
-23       return false;
-24     }
-25   }
+   setEmail(email) {
+     if (email) {
+       this.#email = email;
+       return true;
+     } else {
+       return false;
+     }
+   }
+   getEmail() {
+     return this.#email;
+   }
 
-26   getEmail() {
-27     return this.#email;
-28   }
+ }
 
-29 }
-
-30 module.exports = Pessoa;
+ module.exports = Pessoa;
 ```
 
 ------------------------------------------------------------------------
@@ -186,32 +185,29 @@ Ela herda atributos e comportamentos da classe `Pessoa`.
 **Arquivo:** `PF.js`
 
 ``` javascript
-01 // Arquivo criado em projeto no www.stackblitz.com denominado PF.js (Pessoa Física)
-02 // Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
-03 // Objetivo do exemplo: demonstrar conceitos de Herança, bem como encapsulamento adicionados de condicionais
+// Arquivo criado em projeto no www.stackblitz.com denominado PF.js (Pessoa Física)
+// Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
+// Objetivo do exemplo: demonstrar conceitos de Herança, bem como encapsulamento adicionados de condicionais
 
-04 const Pessoa = require('./Pessoa');
+const Pessoa = require('./Pessoa');
 
-05 class PF extends Pessoa {
+class PF extends Pessoa {
 
-06   #cpf;
+ #cpf;
 
-07   setCPF(cpf) {
-08     if (cpf) {
-09       this.#cpf = cpf;
-10       return true;
-11     } else {
-12       return false;
-13     }
-14   }
-
-15   getCPF() {
-16     return this.#cpf;
-17   }
-
-18 }
-
-19 module.exports = PF;
+setCPF(cpf) {
+     if (cpf) {
+       this.#cpf = cpf;
+       return true;
+     } else {
+       return false;
+     }
+   }
+   getCPF() {
+     return this.#cpf;
+   }
+ }
+module.exports = PF;
 ```
 
 ------------------------------------------------------------------------
@@ -355,54 +351,41 @@ node ./objetos/usaPessoas.js
 **Arquivo:** `usaPessoas.js`
 
 ``` javascript
-01 const Pessoa = require('./pessoas/Pessoa');
-02 const PF = require('./pessoas/PF');
-
-03 const x = new Pessoa();
-
-04 let resposta = x.setNome('');
-05 console.log(resposta);
-
-06 if (resposta) {
-07   console.log(x.getNome());
-08 } else {
-09   console.log("Nome vazio");
-10 }
-
-11 resposta = x.setEmail('vaguetti@gmail.com');
-
-12 console.log(resposta);
-
-13 if (resposta) {
-14   console.log(x.getEmail());
-15 } else {
-16   console.log("E-mail vazio");
-17 }
-
-18 const y = new PF();
-
-19 resposta = y.setNome('Pedro');
-20 console.log(resposta);
-
-21 if (resposta) {
-22   console.log(y.getNome());
-23 }
-
-24 resposta = y.setEmail('');
-25 console.log(resposta);
-
-26 if (resposta) {
-27   console.log(y.getEmail());
-28 } else {
-29   console.log("Email vazio");
-30 }
-
-31 resposta = y.setCPF('123456789-10');
-32 console.log(resposta);
-
-33 if (resposta) {
-34   console.log(y.getCPF());
-35 }
+ const Pessoa = require('./pessoas/Pessoa');
+ const PF = require('./pessoas/PF');
+ const x = new Pessoa();
+ let resposta = x.setNome('');
+ console.log(resposta);
+ if (resposta) {
+   console.log(x.getNome());
+ } else {
+   console.log("Nome vazio");
+ }
+ resposta = x.setEmail('vaguetti@gmail.com');
+ console.log(resposta);
+ if (resposta) {
+   console.log(x.getEmail());
+ } else {
+   console.log("E-mail vazio");
+ }
+ const y = new PF();
+ resposta = y.setNome('Pedro');
+ console.log(resposta);
+ if (resposta) {
+   console.log(y.getNome());
+ }
+ resposta = y.setEmail('');
+ console.log(resposta);
+ if (resposta) {
+   console.log(y.getEmail());
+ } else {
+   console.log("Email vazio");
+ }
+ resposta = y.setCPF('123456789-10');
+ console.log(resposta);
+ if (resposta) {
+   console.log(y.getCPF());
+ }
 ```
 
 ------------------------------------------------------------------------
