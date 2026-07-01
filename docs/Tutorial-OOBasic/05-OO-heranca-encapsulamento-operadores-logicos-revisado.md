@@ -113,25 +113,24 @@ Encerram a classe e exportam o módulo utilizando `module.exports`.
 
 ------------------------------------------------------------------------
 
+---
+
 ## 📌 Conceitos-Chave Envolvidos
 
-  Conceito           Explicação
+| Conceito | Explicação |
+|----------|------------|
+| `extends` | Permite que uma classe herde atributos e métodos de outra classe. |
+| Encapsulamento | Protege os atributos privados da classe, permitindo seu acesso apenas por métodos públicos. |
+| `#atributo` | Declara um atributo privado da classe. |
+| `&&` | Operador lógico **E (AND)**. Todas as condições devem ser verdadeiras para que a expressão seja verdadeira. |
+| `\|\|` | Operador lógico **OU (OR)**. Pelo menos uma das condições deve ser verdadeira para que a expressão seja verdadeira. |
+| `startsWith()` | Verifica se uma string inicia com um determinado texto. |
+| `length` | Retorna a quantidade de caracteres de uma string. |
+| Getter / Setter | Métodos utilizados para acessar e modificar atributos privados de forma controlada. |
+| `module.exports` | Exporta a classe para que possa ser reutilizada em outros módulos JavaScript. |
+| `require()` | Importa módulos ou classes previamente exportados. |
 
-  ------------------ ----------------------------------------------
-
-  `extends`          Herança entre classes.
-  Encapsulamento     Proteção de atributos privados.
-  `#atributo`        Campo privado da classe.
-  `&&`               Todas as condições devem ser verdadeiras.
-  `\|\|`             Pelo menos uma condição deve ser verdadeira.
-  `startsWith()`     Verifica o início de uma string.
-  `length`           Quantidade de caracteres da string.
-  Getter / Setter    Métodos de acesso aos atributos privados.
-  `module.exports`   Exporta a classe.
-  `require()`        Importa módulos JavaScript.
-
-------------------------------------------------------------------------
-
+---
 ## 💡 Dicas do Professor
 
 - Utilize `&&` quando todas as condições forem obrigatórias.
