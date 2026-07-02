@@ -168,14 +168,14 @@ Aluno e Professor sem duplicar código.
 
   Critério                   Pontos
   ------------------------- --------
-  Biblioteca de validação     1,0
-  Classe Pessoa               1,5
-  Encapsulamento correto      1,5
-  Classe Aluno                1,5
-  Classe Professor            1,5
-  Sobrescrita                 1,0
-  Arquivo de testes           1,0
-  Questões teóricas           1,0
+  - Biblioteca de validação     1,0
+  - Classe Pessoa               1,5
+  - Encapsulamento correto      1,5
+  - Classe Aluno                1,5
+  - Classe Professor            1,5
+  - Sobrescrita                 1,0
+  - Arquivo de testes           1,0
+  - Questões teóricas           1,0
 
 **Total: 10,0 pontos**
 
