@@ -437,4 +437,4 @@ Para consolidar os conceitos estudados nesta apostila, resolva os exercícios de
 
 > **Exercícios de Fixação – Manipulação de Arrays**
 >
-> *Link para o documento de exercícios (será definido posteriormente).*
+> - https://js-oo-ebook.vercel.app/docs/tutorial-exercicios/Manipulando_Arrays
