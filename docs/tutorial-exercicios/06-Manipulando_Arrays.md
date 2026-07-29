@@ -210,21 +210,15 @@ Ao final, exiba os dois arrays.
 
 # 📌 Questões Teóricas
 
-### 1)
-
-O que é um array?
+### 1) O que é um array?
 
 ---
 
-### 2)
-
-Como os elementos de um array são organizados?
+### 2) Como os elementos de um array são organizados?
 
 ---
 
-### 3)
-
-Qual a diferença entre:
+### 3) Qual a diferença entre:
 
 ```javascript
 push()
@@ -238,9 +232,7 @@ unshift()
 
 ---
 
-### 4)
-
-Qual a diferença entre:
+### 4) Qual a diferença entre:
 
 ```javascript
 pop()
@@ -254,9 +246,7 @@ shift()
 
 ---
 
-### 5)
-
-Para que serve a propriedade:
+### 5) Para que serve a propriedade:
 
 ```javascript
 length
@@ -264,15 +254,11 @@ length
 
 ---
 
-### 6)
-
-Como acessar o último elemento de um array sem informar um índice fixo?
+### 6) Como acessar o último elemento de um array sem informar um índice fixo?
 
 ---
 
-### 7)
-
-Por que utilizar arrays em vez de criar uma variável para cada informação?
+### 7) Por que utilizar arrays em vez de criar uma variável para cada informação?
 
 ---
 
