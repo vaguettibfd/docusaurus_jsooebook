@@ -1,0 +1,67 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class Cliente {
+- nome : String
+- telefone : String
+- animais : Animal[]
++ setNome(String nome) : boolean
++ getNome() : String
++ setTelefone(String telefone) : boolean
++ getTelefone() : String
++ addAnimal(Animal animal) : boolean
++ getAnimais() : Animal[]
++ listarAnimais() : void
+}
+
+class Animal {
+- nome : String
+- especie : String
+- cliente : Cliente
+- prontuario : Prontuario
+- veterinarios : Veterinario[]
++ setNome(String nome) : boolean
++ getNome() : String
++ setEspecie(String especie) : boolean
++ getEspecie() : String
++ setCliente(Cliente cliente) : boolean
++ getCliente() : Cliente
++ setProntuario(Prontuario prontuario) : boolean
++ getProntuario() : Prontuario
++ addVeterinario(Veterinario veterinario) : boolean
++ getVeterinarios() : Veterinario[]
++ listarVeterinarios() : void
+}
+
+class Prontuario {
+- numero : String
+- observacoes : String
+- animal : Animal
++ setNumero(String numero) : boolean
++ getNumero() : String
++ setObservacoes(String observacoes) : boolean
++ getObservacoes() : String
++ setAnimal(Animal animal) : boolean
++ getAnimal() : Animal
+}
+
+class Veterinario {
+- nome : String
+- crmv : String
+- animais : Animal[]
++ setNome(String nome) : boolean
++ getNome() : String
++ setCRMV(String crmv) : boolean
++ getCRMV() : String
++ addAnimal(Animal animal) : boolean
++ getAnimais() : Animal[]
+}
+
+Cliente "1" -- "N" Animal
+
+Animal "1" o-- "1" Prontuario
+
+Animal "N" -- "N" Veterinario
+
+@enduml

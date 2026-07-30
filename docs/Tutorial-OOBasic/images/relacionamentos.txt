@@ -1,0 +1,79 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Pessoa {
+- nome : String
+- email : String
++ setNome(String nome) : boolean
++ getNome() : String
++ setEmail(String email) : boolean
++ getEmail() : String
++ setEndereco(Endereco endereco) : boolean
++ getEndereco() : Endereco
++ addTelefone(Telefone telefone): boolean
++ getTelefones() : Telefones []
+}
+class PJ {
+ - cnpj : String
+ + setCNPJ(String cnpj) : boolean
+ + getCNPJ() : String
+}
+class PF {
+- cpf : String
+ + setCPF(String cpf) : boolean
+ + getCPF() : String
+ + setTitulo(Titulo titulo) : boolean
+ + getTitulo() : Titulo
+}
+
+Pessoa <|-- PF
+Pessoa <|-- PJ
+
+class Aluno {
+- matricula : String
+-curso : String
+ + setMatricula(String matricula) : boolean
+ + getMatricula() : String
+ + setCurso(String curso) : boolean
+ + getCurso() : String
+}
+
+PF <|-- Aluno
+
+class Endereco {
+ - logradouro : String
+ - cep : String
++ setLogradouro(String logradouro) : boolean
+ + getLogradouro() : String
+ + setCep(String cep) : boolean
+ + getCep() : String
+ + addPessoa(Pessoa pessoa) : boolean
+ + getPessoas() : Pessoa[]
+}
+class Telefone {
+ - ddd : String
+ - numero : String
++ setDdd(String ddd) : boolean
+ + getDdd() : String
+ + setNumero(String numero) : boolean
+ + getNumero() : String
+ + addPessoa(Pessoa pessoa) : boolean
+ + getPessoas() : Pessoa[]
+}
+Pessoa "N" -- "N" Telefone
+Pessoa "N" -- "1" Endereco
+
+class Titulo{
+- numero : String
+- zona :String
+- secao : String
++ setNumero(String numero) : boolean
++ getNumero() : String
++ setZona(String zona) : boolean
++ getZona() : String
++ setSecao(String secao) : boolean
++ getNumero() : String
++ setPF(PF pf) : boolean
++ getPF(): PF 
+}
+PF "1" o-- "1" Titulo
+@enduml
