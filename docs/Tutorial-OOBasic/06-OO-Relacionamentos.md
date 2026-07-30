@@ -96,7 +96,7 @@ class Pessoa {
     setEndereco(endereco) {
         if (endereco instanceof Endereco) {
             this.#endereco = endereco;
-            endereco.setPessoa(this); // referência cruzada
+            endereco.addPessoa(this); // referência cruzada
             return true;
         } else {
             return false;
@@ -110,7 +110,7 @@ class Pessoa {
     addTelefone(telefone) {
         if (telefone instanceof Telefone) {
             this.#telefones.push(telefone);
-            telefone.setPessoa(this); // referência cruzada
+            telefone.addPessoa(this); // referência cruzada
             return true;
         } else {
             return false;
@@ -198,7 +198,7 @@ Os atributos `#endereco` e `#telefones` representam os relacionamentos com outra
 setEndereco(endereco) {
     if (endereco instanceof Endereco) {
         this.#endereco = endereco;
-        endereco.setPessoa(this);
+        endereco.addPessoa(this);
         return true;
     } else {
         return false;
@@ -213,7 +213,7 @@ Antes de realizar a associação, o operador `instanceof` verifica se o objeto r
 Quando a validação é bem-sucedida:
 
 - o endereço é armazenado em `#endereco`;
-- é criada uma referência cruzada utilizando `endereco.setPessoa(this)`, permitindo que o objeto `Endereco` também conheça a pessoa associada.
+- é criada uma referência cruzada utilizando `endereco.addPessoa(this)`, permitindo que o objeto `Endereco` também conheça a pessoa associada.
 
 Caso o objeto informado não seja válido, o método retorna `false`.
 
@@ -237,7 +237,7 @@ Retorna o objeto `Endereco` atualmente associado à pessoa.
 addTelefone(telefone) {
     if (telefone instanceof Telefone) {
         this.#telefones.push(telefone);
-        telefone.setPessoa(this);
+        telefone.addPessoa(this);
         return true;
     } else {
         return false;
@@ -249,7 +249,7 @@ Adiciona um objeto da classe `Telefone` ao array `#telefones`.
 
 Assim como no método anterior, a associação somente é realizada quando o objeto informado pertence à classe esperada.
 
-Além de armazenar o telefone, também é criada uma referência cruzada por meio de `telefone.setPessoa(this)`.
+Além de armazenar o telefone, também é criada uma referência cruzada por meio de `telefone.addPessoa(this)`.
 
 ---
 
@@ -339,7 +339,7 @@ class Endereco {
     #cep;
     #pessoas = [];
 
-    setPessoa(pessoa) {
+    addPessoa(pessoa) {
         if (pessoa) {
             this.#pessoas.push(pessoa);
             return true;
@@ -405,10 +405,10 @@ O atributo `#pessoas` é um array responsável por armazenar todas as pessoas as
 
 ---
 
-#### **Linhas 08–16 — Método `setPessoa()`**
+#### **Linhas 08–16 — Método `addPessoa()`**
 
 ```javascript
-setPessoa(pessoa) {
+addPessoa(pessoa) {
     if (pessoa) {
         this.#pessoas.push(pessoa);
         return true;
@@ -549,7 +549,7 @@ class Telefone {
     #numero;
     #pessoas = [];
 
-    setPessoa(pessoa) {
+    addPessoa(pessoa) {
         if (pessoa) {
             this.#pessoas.push(pessoa);
             return true;
@@ -599,10 +599,10 @@ O atributo `#numero` armazena o número telefônico, enquanto `#pessoas` mantém
 
 ---
 
-#### **Linhas 07–15 — Método `setPessoa()`**
+#### **Linhas 07–15 — Método `addPessoa()`**
 
 ```javascript
-setPessoa(pessoa) {
+addPessoa(pessoa) {
     if (pessoa) {
         this.#pessoas.push(pessoa);
         return true;
