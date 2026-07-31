@@ -997,7 +997,7 @@ obj.setEndereco(end);       // vincula Endereco à PF
 obj.addTelefone(fone1);     // vincula Telefone à PF
 obj.addTelefone(fone2);     // vincula outro Telefone à PF
 
-obj.setTitulo(titulo);      // vincula Título à PF
+//obj.setTitulo(titulo);      // vincula Título à PF
 
 console.log(obj.getNome());
 
@@ -1013,7 +1013,7 @@ console.log(end.getPessoas());
 
 console.log(fone1.getPessoas());
 
-console.log(titulo.getPF().getNome());
+//console.log(titulo.getPF().getNome());
 ```
 
 ---
