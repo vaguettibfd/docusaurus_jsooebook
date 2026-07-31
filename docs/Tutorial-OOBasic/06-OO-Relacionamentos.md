@@ -740,12 +740,12 @@ Além do atributo `cpf`, essa classe mantém uma referência para um objeto da c
 
 ```javascript
 const Pessoa = require('./Pessoa');
-const Titulo = require('./Titulo');
+//const Titulo = require('./Titulo');
 
 class PF extends Pessoa {
 
     #cpf;
-    #titulo;
+ //   #titulo;
 
     setCPF(cpf) {
         if (cpf) {
@@ -760,7 +760,7 @@ class PF extends Pessoa {
         return this.#cpf;
     }
 
-    setTitulo(titulo) {
+ /*   setTitulo(titulo) {
         if (titulo instanceof Titulo) {
             this.#titulo = titulo;
             titulo.setPF(this);
@@ -772,7 +772,7 @@ class PF extends Pessoa {
 
     getTitulo() {
         return this.#titulo;
-    }
+    } */
 
 }
 
@@ -971,7 +971,7 @@ Verificar as Referências Cruzadas
 ```javascript
 const Telefone = require('./pessoas/Telefone');
 const Endereco = require('./pessoas/Endereco');
-const Titulo = require('./pessoas/Titulo');
+//const Titulo = require('./pessoas/Titulo');
 
 const PF = require('./pessoas/PF');
 
@@ -984,9 +984,9 @@ end.setLogradouro('QNM 40');
 fone1.setNumero('1234-5678');
 fone2.setNumero('1255-5578');
 
-const titulo = new Titulo();
-titulo.setNumero('1234156');
-titulo.setSecao('DF');
+//const titulo = new Titulo();
+//titulo.setNumero('1234156');
+//titulo.setSecao('DF');
 
 const obj = new PF();
 
@@ -1005,7 +1005,7 @@ console.log(obj.getEndereco().getLogradouro());
 
 console.log(obj.getTelefones());
 
-console.log(obj.getTitulo().getNumero());
+//console.log(obj.getTitulo().getNumero());
 
 // Verificando as referências cruzadas
 
