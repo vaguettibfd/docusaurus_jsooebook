@@ -745,7 +745,7 @@ const Titulo = require('./Titulo');
 class PF extends Pessoa {
 
     #cpf;
- //   #titulo;
+    #titulo;
 
     setCPF(cpf) {
         if (cpf) {
