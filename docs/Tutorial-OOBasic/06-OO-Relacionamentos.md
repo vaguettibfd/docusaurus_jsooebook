@@ -740,7 +740,7 @@ Além do atributo `cpf`, essa classe mantém uma referência para um objeto da c
 
 ```javascript
 const Pessoa = require('./Pessoa');
-//const Titulo = require('./Titulo');
+const Titulo = require('./Titulo');
 
 class PF extends Pessoa {
 
@@ -760,7 +760,7 @@ class PF extends Pessoa {
         return this.#cpf;
     }
 
- /*   setTitulo(titulo) {
+    setTitulo(titulo) {
         if (titulo instanceof Titulo) {
             this.#titulo = titulo;
             titulo.setPF(this);
@@ -772,7 +772,7 @@ class PF extends Pessoa {
 
     getTitulo() {
         return this.#titulo;
-    } */
+    } 
 
 }
 
@@ -923,6 +923,253 @@ Exporta a classe `PF`, permitindo sua reutilização em outros módulos do siste
 >
 > Ao chamar `titulo.setPF(this)`, a associação passa a existir nos dois sentidos, facilitando a navegação entre os objetos.
 
+## Classe `Titulo`
+
+A classe `Titulo` representa o **Título de Eleitor** de uma pessoa física.
+
+Neste exemplo, ela é utilizada para demonstrar a implementação de um relacionamento **1:1 (um para um)** com a classe `PF`.
+
+Nesse tipo de relacionamento:
+
+- cada **Pessoa Física** possui um único **Título de Eleitor**;
+- cada **Título de Eleitor** pertence a apenas uma **Pessoa Física**.
+
+Essa associação é bastante comum em sistemas reais, nos quais determinados documentos pertencem exclusivamente a uma única pessoa.
+
+A classe também mantém uma referência para o objeto `PF`, permitindo navegar pelo relacionamento em ambos os sentidos por meio de uma **referência cruzada**.
+
+### 💻 Código Completo
+
+**Arquivo:** `Titulo.js`
+
+```javascript
+// Código Titulo.js
+
+class Titulo {
+
+    #numero;
+    #zona;
+    #secao;
+
+    setNumero(numero) {
+        if (numero) {
+            this.#numero = numero;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    getNumero() {
+        return this.#numero;
+    }
+
+    setZona(zona) {
+        if (zona) {
+            this.#zona = zona;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    getZona() {
+        return this.#zona;
+    }
+
+    setSecao(secao) {
+        if (secao) {
+            this.#secao = secao;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    getSecao() {
+        return this.#secao;
+    }
+
+    // Relacionamento 1 para 1 com a classe PF
+
+    #pf;
+
+    setPF(pf) {
+        if (pf) {
+            this.#pf = pf;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    getPF() {
+        return this.#pf;
+    }
+
+}
+
+module.exports = Titulo;
+```
+
+---
+
+### 📘 Comentários e Explicações Linha a Linha
+
+#### **Linhas 01–06**
+
+```javascript
+class Titulo {
+
+    #numero;
+    #zona;
+    #secao;
+```
+
+Declara a classe `Titulo` e seus atributos privados.
+
+Os atributos representam as principais informações do título de eleitor:
+
+- `#numero`: número do título;
+- `#zona`: zona eleitoral;
+- `#secao`: seção eleitoral.
+
+Todos os atributos são privados, garantindo o encapsulamento das informações.
+
+---
+
+#### **Linhas 08–18 — Métodos `setNumero()` e `getNumero()`**
+
+```javascript
+setNumero(numero) {
+    if (numero) {
+        this.#numero = numero;
+        return true;
+    } else {
+        return false;
+    }
+}
+
+getNumero() {
+    return this.#numero;
+}
+```
+
+Esses métodos são responsáveis por armazenar e recuperar o número do título de eleitor.
+
+O método `setNumero()` realiza uma validação simples antes de armazenar o valor informado.
+
+---
+
+#### **Linhas 20–30 — Métodos `setZona()` e `getZona()`**
+
+```javascript
+setZona(zona) {
+    if (zona) {
+        this.#zona = zona;
+        return true;
+    } else {
+        return false;
+    }
+}
+
+getZona() {
+    return this.#zona;
+}
+```
+
+Permitem armazenar e consultar a zona eleitoral.
+
+Assim como os demais métodos `set`, somente valores válidos são armazenados.
+
+---
+
+#### **Linhas 32–42 — Métodos `setSecao()` e `getSecao()`**
+
+```javascript
+setSecao(secao) {
+    if (secao) {
+        this.#secao = secao;
+        return true;
+    } else {
+        return false;
+    }
+}
+
+getSecao() {
+    return this.#secao;
+}
+```
+
+Esses métodos armazenam e retornam a seção eleitoral correspondente ao título.
+
+---
+
+#### **Linhas 44–57 — Relacionamento com a classe `PF`**
+
+```javascript
+#pf;
+
+setPF(pf) {
+    if (pf) {
+        this.#pf = pf;
+        return true;
+    } else {
+        return false;
+    }
+}
+
+getPF() {
+    return this.#pf;
+}
+```
+
+O atributo `#pf` mantém uma referência para o objeto da classe `PF` associado ao título.
+
+Esse atributo implementa o relacionamento **1:1**, permitindo que um objeto `Titulo` conheça a pessoa física à qual pertence.
+
+O método `setPF()` estabelece essa associação e o método `getPF()` permite recuperar posteriormente o objeto relacionado.
+
+Essa implementação caracteriza uma **referência cruzada**, pois tanto `PF` quanto `Titulo` mantêm referências um ao outro.
+
+---
+
+#### **Linha 59**
+
+```javascript
+module.exports = Titulo;
+```
+
+Exporta a classe `Titulo`, permitindo sua reutilização em outros módulos da aplicação.
+
+---
+
+### 📌 Conceitos-Chave Envolvidos
+
+| Conceito | Explicação |
+|-----------|-----------|
+| Relacionamento 1:1 | Cada objeto `Titulo` pertence a exatamente um objeto `PF`, e cada objeto `PF` possui um único `Titulo`. |
+| Encapsulamento | Os atributos permanecem privados e são acessados apenas por métodos públicos. |
+| Referência Cruzada | A associação é mantida tanto na classe `PF` quanto na classe `Titulo`. |
+| Validação | Os métodos `set` verificam se os valores recebidos são válidos antes de armazená-los. |
+| Modularização | A classe é exportada utilizando `module.exports` para reutilização em outros arquivos. |
+
+---
+
+### 💡 Dicas do Professor
+
+> **Relacionamentos 1:1 representam associações exclusivas.**
+>
+> Em sistemas reais, documentos como título de eleitor, carteira de habilitação, passaporte ou certificado digital normalmente pertencem a apenas uma pessoa.
+
+> **As referências cruzadas facilitam a navegação entre objetos.**
+>
+> Ao armazenar a referência para o objeto `PF`, o título passa a conhecer seu proprietário, permitindo consultar seus dados sem necessidade de novas buscas.
+
+> **Cada classe possui uma responsabilidade específica.**
+>
+> A classe `Titulo` é responsável apenas pelas informações do título de eleitor e pelo relacionamento com a classe `PF`, mantendo o princípio da responsabilidade única.
+
 # Integração das Classes – Arquivo `usaPF.js`
 
 Até este momento foram implementadas todas as classes que compõem o exemplo deste capítulo:
@@ -971,7 +1218,7 @@ Verificar as Referências Cruzadas
 ```javascript
 const Telefone = require('./pessoas/Telefone');
 const Endereco = require('./pessoas/Endereco');
-//const Titulo = require('./pessoas/Titulo');
+const Titulo = require('./pessoas/Titulo');
 
 const PF = require('./pessoas/PF');
 
@@ -984,9 +1231,9 @@ end.setLogradouro('QNM 40');
 fone1.setNumero('1234-5678');
 fone2.setNumero('1255-5578');
 
-//const titulo = new Titulo();
-//titulo.setNumero('1234156');
-//titulo.setSecao('DF');
+const titulo = new Titulo();
+titulo.setNumero('1234156');
+titulo.setSecao('DF');
 
 const obj = new PF();
 
@@ -997,7 +1244,7 @@ obj.setEndereco(end);       // vincula Endereco à PF
 obj.addTelefone(fone1);     // vincula Telefone à PF
 obj.addTelefone(fone2);     // vincula outro Telefone à PF
 
-//obj.setTitulo(titulo);      // vincula Título à PF
+obj.setTitulo(titulo);      // vincula Título à PF
 
 console.log(obj.getNome());
 
@@ -1005,7 +1252,7 @@ console.log(obj.getEndereco().getLogradouro());
 
 console.log(obj.getTelefones());
 
-//console.log(obj.getTitulo().getNumero());
+console.log(obj.getTitulo().getNumero());
 
 // Verificando as referências cruzadas
 
@@ -1013,7 +1260,7 @@ console.log(end.getPessoas());
 
 console.log(fone1.getPessoas());
 
-//console.log(titulo.getPF().getNome());
+console.log(titulo.getPF().getNome());
 ```
 
 ---
