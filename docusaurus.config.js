@@ -53,7 +53,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         
-        blog: {
+       /* blog: {
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -67,7 +67,8 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
+        },*/
+        blog : false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -97,11 +98,11 @@ const config = {
             label: 'E-Book',
           },
           /*{to: '/blog', label: 'Blog', position: 'left'},*/
-          {
+        /*  {
             href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
             label: 'GitHub',
             position: 'right',
-          },
+          },*/
         ],
       },
       footer: {
@@ -135,11 +136,7 @@ const config = {
           },
           {
             title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+            items: [           
               {
                 label: 'GitHub',
                 href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
