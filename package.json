@@ -2,6 +2,9 @@
   "name": "docusaurus",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
@@ -38,9 +41,6 @@
       "last 3 firefox version",
       "last 5 safari version"
     ]
-  },
-  "engines": {
-    "node": "20.x"
   },
   "description": "Docusaurus example project"
 }
