@@ -5,7 +5,6 @@ skinparam classAttributeIconSize 0
 class Cliente {
 - nome : String
 - telefone : String
-- animais : Animal[]
 + setNome(String nome) : boolean
 + getNome() : String
 + setTelefone(String telefone) : boolean
@@ -18,9 +17,6 @@ class Cliente {
 class Animal {
 - nome : String
 - especie : String
-- cliente : Cliente
-- prontuario : Prontuario
-- veterinarios : Veterinario[]
 + setNome(String nome) : boolean
 + getNome() : String
 + setEspecie(String especie) : boolean
@@ -37,7 +33,6 @@ class Animal {
 class Prontuario {
 - numero : String
 - observacoes : String
-- animal : Animal
 + setNumero(String numero) : boolean
 + getNumero() : String
 + setObservacoes(String observacoes) : boolean
@@ -49,7 +44,6 @@ class Prontuario {
 class Veterinario {
 - nome : String
 - crmv : String
-- animais : Animal[]
 + setNome(String nome) : boolean
 + getNome() : String
 + setCRMV(String crmv) : boolean
