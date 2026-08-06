@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'JavaSCript e Orientação a Objetos',
-  tagline: 'Série Didática: Pensando Software com JavaScript',
+  title: 'JavaSCript Orientado a Objetos',
+  tagline: 'Da Prática a Teoria',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,7 +20,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://js-oo-ebook.vercel.app',
+  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -30,16 +30,14 @@ const config = {
   organizationName: 'Leandro Vaguetti', // Usually your GitHub org/user name.
   projectName: 'JSOOEbook', // Usually your repo name.
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    //defaultLocale: 'en',
-    //locales: ['en'],
-    defaultLocale: 'pt-BR',
-    locales: ['pt-BR'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -51,8 +49,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-           // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         
         blog: {
@@ -86,20 +84,19 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'JavaScript e Orientação a Objetos',
+        title: 'JavaScript Orientado a Objetos',
         logo: {
-          alt: 'JavaScript e Orientação a Objetos - Logo',
-          src: 'img/ebook1-logo.svg',
+          alt: 'JavaScript Orientado a Objetos Logo',
+          src: 'img/logo.svg',
         },
         items: [
-          /*{
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'E-Book',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},*/
-          { to: '/docs/ebook', label: 'E-Book', position: 'left' },
+          /*{to: '/blog', label: 'Blog', position: 'left'},*/
           {
             href: 'https://github.com/vaguettibfd/docusaurus_jsooebook',
             label: 'GitHub',
