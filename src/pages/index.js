@@ -46,7 +46,7 @@ export default function Home() {
           >
             <Link
               className="button button--primary button--lg"
-              to="/docs/intro"
+              to="/docs/indice"
             >
               📘 Acessar o E-Book
             </Link>

@@ -41,7 +41,9 @@ export default sidebars;
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 
 const sidebars = {
+
   tutorialSidebar: [
+    'frontmatter/Indice',
     {
       type: 'category',
       label: 'Fundamentos de JS',
