@@ -1828,6 +1828,6 @@ Ao concluir este capítulo, você deverá ser capaz de:
 
 ## 📚 Exercício Integrador 
 
-- https://js-oo-ebook.vercel.app/docs/tutorial-exercicio-integrador/Exerc%C3%ADcio_Integrador_02
+- https://js-oo-ebook.vercel.app/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02
 
 ---------------------
