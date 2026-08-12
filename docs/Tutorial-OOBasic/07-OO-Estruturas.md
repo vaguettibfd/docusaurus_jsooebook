@@ -1826,8 +1826,8 @@ Ao concluir este capítulo, você deverá ser capaz de:
 
 ---------------------
 
-## 📚 Exercícios de Fixação
+## 📚 Exercício Integrador 
 
-- 
+- https://js-oo-ebook.vercel.app/docs/tutorial-exercicio-integrador/Exerc%C3%ADcio_Integrador_02
 
 ---------------------

@@ -27,6 +27,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 4. [Herança, Sobrescrita e Operadores de Comparação](/docs/Tutorial-OOBasic/OO-heranca-sobrescrita-operadores-comparacao-revisado)
 5. [Herança, Encapsulamento e Operadores Lógicos](/docs/Tutorial-OOBasic/OO-heranca-encapsulamento-operadores-logicos-revisado)
 6. [Relacionamentos entre Classes](/docs/Tutorial-OOBasic/OO-Relacionamentos)
+7. [Estruturas de Objetos, Exportações e Desestruturação](/docs/Tutorial-OOBasic/OO-Estruturas)
 
 ---
 
@@ -53,6 +54,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 ## 🚀 Exercícios Integradores
 
 1. [Exercício Integrador 01 — Sistema Acadêmico](/docs/tutorial-exercicio-integrador/Exercicio_Integrador_01_Sistema_Academico)
+2. [Exercício Integrador 02 — Pessoa Jurídica, Inscrição Estadual e ES Modules]((/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02))
 
 ---
 
