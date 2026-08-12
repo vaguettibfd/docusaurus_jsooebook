@@ -56,6 +56,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 1. [Exercício Integrador 01 — Sistema Acadêmico](/docs/tutorial-exercicio-integrador/Exercicio_Integrador_01_Sistema_Academico)
 2. [Exercício Integrador 02 — Pessoa Jurídica, Inscrição Estadual e ES Modules](/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02)
 
+
 ---
 
 > 💡 **Sugestão de estudo:** acompanhe os conteúdos na ordem apresentada e realize os exercícios de fixação correspondentes antes de avançar para os exercícios integradores.
