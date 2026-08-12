@@ -1828,6 +1828,6 @@ Ao concluir este capítulo, você deverá ser capaz de:
 
 ## 📚 Exercícios de Fixação
 
-- [Exercício Integrador – Estruturas de Objetos, Exportações e Relacionamentos](LINK_DO_EXERCICIO)
+- 
 
 ---------------------
