@@ -54,7 +54,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 ## 🚀 Exercícios Integradores
 
 1. [Exercício Integrador 01 — Sistema Acadêmico](/docs/tutorial-exercicio-integrador/Exercicio_Integrador_01_Sistema_Academico)
-2. [Exercício Integrador 02 — Pessoa Jurídica, Inscrição Estadual e ES Modules]((/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02))
+2. [Exercício Integrador 02 — Pessoa Jurídica, Inscrição Estadual e ES Modules](/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02)
 
 ---
 
