@@ -28,6 +28,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 5. [Herança, Encapsulamento e Operadores Lógicos](/docs/Tutorial-OOBasic/OO-heranca-encapsulamento-operadores-logicos-revisado)
 6. [Relacionamentos entre Classes](/docs/Tutorial-OOBasic/OO-Relacionamentos)
 7. [Estruturas de Objetos, Exportações e Desestruturação](/docs/Tutorial-OOBasic/OO-Estruturas)
+8. [Orientação a Objetos — toJSON(), DAO e Armazenamento Local](/docs/Tutorial-OOBasic/OO-ToJSON-DAO-Armazenamento-Local)
 
 ---
 
