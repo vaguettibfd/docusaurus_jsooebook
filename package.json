@@ -15,7 +15,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "dev": "docusaurus start"
+    "dev": "docusaurus start",
+    "ebook:check": "node ebook/check-book-files.mjs",
+    "ebook:build-md": "node ebook/build-book.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.9.2",

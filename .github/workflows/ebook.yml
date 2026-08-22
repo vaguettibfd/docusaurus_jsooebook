@@ -1,0 +1,47 @@
+name: Gerar E-book
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-ebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Instalar dependências
+        run: yarn install --frozen-lockfile
+
+      - name: Verificar arquivos do e-book
+        run: yarn ebook:check
+
+      - name: Gerar Markdown consolidado
+        run: yarn ebook:build-md
+
+      - name: Instalar Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Gerar EPUB
+        run: |
+          pandoc \
+            ebook/output/book.md \
+            --metadata-file=ebook/metadata.yaml \
+            --toc \
+            --toc-depth=3 \
+            --resource-path=.:docs:static \
+            -o ebook/output/ebook-teste.epub
+
+      - name: Publicar EPUB como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: ebook-epub
+          path: ebook/output/ebook-teste.epub
