@@ -13,8 +13,6 @@
 Brasília – DF  
 2026
 
-\newpage
-
 ## Ficha Catalográfica
 
 Vaguetti, Leandro.  
@@ -33,8 +31,6 @@ I. Título.
 
 CDD: 005.133
 
-\newpage
-
 ## Prefácio
 
 A programação orientada a objetos constitui um dos principais paradigmas utilizados no desenvolvimento de software contemporâneo. No entanto, sua compreensão inicial costuma representar um desafio significativo para estudantes em formação na área de computação, especialmente quando os conceitos são apresentados de forma excessivamente abstrata.
@@ -44,8 +40,6 @@ Este e-book nasce da experiência docente do autor no ensino de programação e 
 A proposta da obra é conduzir o leitor por um percurso progressivo, partindo dos fundamentos da linguagem até os conceitos centrais da orientação a objetos, sempre articulando explicações conceituais, exemplos de código e atividades práticas.
 
 Espera-se que este material contribua tanto para estudantes iniciantes quanto para docentes que buscam recursos didáticos atualizados para o ensino de programação.
-
-\newpage
 
 ## Apresentação
 

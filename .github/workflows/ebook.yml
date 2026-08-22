@@ -30,15 +30,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y pandoc
 
-      - name: Gerar EPUB
-        run: |
-          pandoc \
-            ebook/output/book.md \
-            --metadata-file=ebook/metadata.yaml \
-            --toc \
-            --toc-depth=3 \
-            --resource-path=.:docs:static \
-            -o ebook/output/ebook-teste.epub
+   - name: Gerar EPUB
+    run: |
+    pandoc \
+      ebook/output/book.md \
+      --metadata-file=ebook/metadata.yaml \
+      --css=ebook/ebook.css \
+      --toc \
+      --toc-depth=3 \
+      --resource-path=.:docs:static \
+      --split-level=1 \
+      -o ebook/output/ebook-teste.epub
 
       - name: Publicar EPUB como artefato
         uses: actions/upload-artifact@v4

@@ -1,0 +1,80 @@
+body {
+    font-family: serif;
+    line-height: 1.6;
+    margin: 5%;
+    text-align: justify;
+  }
+  
+  h1 {
+    font-family: sans-serif;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: left;
+    page-break-before: always;
+  }
+  
+  h2 {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    margin-top: 1.8em;
+    margin-bottom: 0.8em;
+    text-align: left;
+  }
+  
+  h3 {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-top: 1.5em;
+    text-align: left;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  blockquote {
+    margin: 1.5em;
+    padding-left: 1em;
+    border-left: 0.25em solid #999;
+  }
+  
+  code {
+    font-family: monospace;
+  }
+  
+  pre {
+    font-family: monospace;
+    font-size: 0.9em;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    padding: 1em;
+  }
+  
+  pre code {
+    font-family: monospace;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+  }
+  
+  th,
+  td {
+    border: 1px solid #999;
+    padding: 0.5em;
+    vertical-align: top;
+  }
+  
+  a {
+    text-decoration: none;
+  }

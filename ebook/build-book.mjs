@@ -101,8 +101,7 @@ bookOrder.forEach((relativePath, index) => {
   );
 });
 
-const separator =
-  '\n\n\\newpage\n\n';
+const separator ='\n\n';
 
 const finalContent =
   contents.join(separator) + '\n';
