@@ -21,25 +21,29 @@ const outputFile = path.join(
 );
 
 function removeFrontmatter(content) {
-  const normalizedContent = content.replace(/\r\n/g, '\n');
-
-  if (!normalizedContent.startsWith('---\n')) {
-    return normalizedContent;
+    let normalizedContent = content
+      .replace(/^\uFEFF/, '')
+      .replace(/\r\n/g, '\n');
+  
+    normalizedContent = normalizedContent.trimStart();
+  
+    if (!normalizedContent.startsWith('---\n')) {
+      return normalizedContent;
+    }
+  
+    const endFrontmatter = normalizedContent.indexOf(
+      '\n---\n',
+      4
+    );
+  
+    if (endFrontmatter === -1) {
+      return normalizedContent;
+    }
+  
+    return normalizedContent
+      .slice(endFrontmatter + 5)
+      .trimStart();
   }
-
-  const endFrontmatter = normalizedContent.indexOf(
-    '\n---\n',
-    4
-  );
-
-  if (endFrontmatter === -1) {
-    return normalizedContent;
-  }
-
-  return normalizedContent
-    .slice(endFrontmatter + 5)
-    .trimStart();
-}
 
 if (!fs.existsSync(bookOrderPath)) {
   console.error(
