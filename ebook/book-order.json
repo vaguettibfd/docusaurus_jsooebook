@@ -1,6 +1,34 @@
 [
-    "docs/00-frontmatter/01-capa.md",
-    "docs/00-frontmatter/02-ficha-catalografica.md",
-    "docs/00-frontmatter/03-prefacio.md",
-    "docs/00-frontmatter/04-apresentacao.md"
-  ]
+  "docs/00-frontmatter/01-capa.md",
+  "docs/00-frontmatter/02-ficha-catalografica.md",
+  "docs/00-frontmatter/03-prefacio.md",
+  "docs/00-frontmatter/04-apresentacao.md",
+
+  "docs/tutorial-JSBasic/01-variaveis-javascript.md",
+  "docs/tutorial-JSBasic/02-funcoes-operadores-aritmeticos.md",
+  "docs/tutorial-JSBasic/03-modulos-e-funcoes.md",
+
+  "docs/tutorial-JSExtras/01-Arrays.md",
+  "docs/tutorial-JSExtras/02-Laços.md",
+
+  "docs/Tutorial-OOBasic/01-orientacao-a-objetos-revisado.md",
+  "docs/Tutorial-OOBasic/02-orientacao-a-objetos-visibilidade-encapsulamento-revisado.md",
+  "docs/Tutorial-OOBasic/03-Encapsulamento_Heranca-revisado.md",
+  "docs/Tutorial-OOBasic/04-OO-heranca-sobrescrita-operadores-comparacao-revisado.md",
+  "docs/Tutorial-OOBasic/05-OO-heranca-encapsulamento-operadores-logicos-revisado.md",
+  "docs/Tutorial-OOBasic/06-OO-Relacionamentos.md",
+  "docs/Tutorial-OOBasic/07-OO-Estruturas.md",
+  "docs/Tutorial-OOBasic/08-OO-ToJSON-DAO-Armazenamento-Local.md",
+
+  "docs/tutorial-exercicios/01-programacao_estruturada.md",
+  "docs/tutorial-exercicios/02-orientacao_objetos.md",
+  "docs/tutorial-exercicios/03-visibilidade_encapsulamento.md",
+  "docs/tutorial-exercicios/04-encapsulamento_condicionais_heranca.md",
+  "docs/tutorial-exercicios/05-heranca-sobrescrita-validacao-exercicio.md",
+  "docs/tutorial-exercicios/06-Manipulando_Arrays.md",
+  "docs/tutorial-exercicios/07-Relacionamentos-classes-exercicio.md",
+  "docs/tutorial-exercicios/08-Lacos-repeticao-exercicio.md",
+
+  "docs/tutorial-exercicio-integrador/01 - Exercicio_Integrador_01_Sistema_Academico.md",
+  "docs/tutorial-exercicio-integrador/02 - Exercicio_Integrador_02.md"
+]
