@@ -33,6 +33,7 @@ jobs:
       - name: Gerar EPUB
         run: |
           pandoc \
+            --from=markdown-yaml_metadata_block \
             ebook/output/book.md \
             --metadata-file=ebook/metadata.yaml \
             --css=ebook/ebook.css \
