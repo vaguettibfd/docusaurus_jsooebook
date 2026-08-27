@@ -1580,6 +1580,6 @@ Ao concluir este capítulo, você deverá ser capaz de:
 
 ## 📚 Exercícios de Fixação
 
--  https://js-oo-ebook.vercel.app/docs/tutorial-exercicio-integrador/Exercicio_Integrador_02
+-  https://jsebook.incluc0de.com.br/docs/tutorial-exercicios/Explorando-BackEnd-ViaCep
 
 ---------------------

@@ -28,7 +28,8 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 5. [Herança, Encapsulamento e Operadores Lógicos](/docs/Tutorial-OOBasic/OO-heranca-encapsulamento-operadores-logicos-revisado)
 6. [Relacionamentos entre Classes](/docs/Tutorial-OOBasic/OO-Relacionamentos)
 7. [Estruturas de Objetos, Exportações e Desestruturação](/docs/Tutorial-OOBasic/OO-Estruturas)
-8. [Orientação a Objetos — toJSON(), DAO e Armazenamento Local](/docs/Tutorial-OOBasic/OO-ToJSON-DAO-Armazenamento-Local)
+8. [toJSON(), DAO e Armazenamento Local](/docs/Tutorial-OOBasic/OO-ToJSON-DAO-Armazenamento-Local)
+9. [Funções Assíncronas e Tratamento de Exceções](/docs/Tutorial-OOBasic/OO-Assincronas-Excecao)
 
 ---
 
@@ -49,6 +50,7 @@ Utilize o índice abaixo para acessar diretamente os conteúdos, exercícios de 
 6. [Manipulação de Arrays](/docs/tutorial-exercicios/Manipulando_Arrays)
 7. [Relacionamentos entre Classes](/docs/tutorial-exercicios/Relacionamentos-classes-exercicio)
 8. [Laços de Repetição](/docs/tutorial-exercicios/Lacos-repeticao-exercicio)
+9. [Explorando BackEnd ViaCep](/docs/tutorial-exercicios/Explorando-BackEnd-ViaCep)
 
 ---
 
