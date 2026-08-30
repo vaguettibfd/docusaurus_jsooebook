@@ -38,7 +38,7 @@ jobs:
             --metadata-file=ebook/metadata.yaml \
             --css=ebook/ebook.css \
             --toc \
-            --toc-depth=3 \
+            --toc-depth=2 \
             --resource-path=.:docs:static \
             --split-level=1 \
             -o ebook/output/ebook-teste.epub
