@@ -19,6 +19,7 @@
   "docs/Tutorial-OOBasic/06-OO-Relacionamentos.md",
   "docs/Tutorial-OOBasic/07-OO-Estruturas.md",
   "docs/Tutorial-OOBasic/08-OO-ToJSON-DAO-Armazenamento-Local.md",
+  "docs/Tutorial-OOBasic/09-OO-Assincronas-Excecao.md",
 
   "docs/tutorial-exercicios/01-programacao_estruturada.md",
   "docs/tutorial-exercicios/02-orientacao_objetos.md",
@@ -28,6 +29,7 @@
   "docs/tutorial-exercicios/06-Manipulando_Arrays.md",
   "docs/tutorial-exercicios/07-Relacionamentos-classes-exercicio.md",
   "docs/tutorial-exercicios/08-Lacos-repeticao-exercicio.md",
+  "docs/tutorial-exercicios/09-Explorando-BackEnd-ViaCep.md",
 
   "docs/tutorial-exercicio-integrador/01 - Exercicio_Integrador_01_Sistema_Academico.md",
   "docs/tutorial-exercicio-integrador/02 - Exercicio_Integrador_02.md"
