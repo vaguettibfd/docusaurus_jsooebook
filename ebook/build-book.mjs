@@ -21,29 +21,36 @@ const outputFile = path.join(
 );
 
 function removeFrontmatter(content) {
-    let normalizedContent = content
-      .replace(/^\uFEFF/, '')
-      .replace(/\r\n/g, '\n');
-  
-    normalizedContent = normalizedContent.trimStart();
-  
-    if (!normalizedContent.startsWith('---\n')) {
-      return normalizedContent;
-    }
-  
-    const endFrontmatter = normalizedContent.indexOf(
-      '\n---\n',
-      4
-    );
-  
-    if (endFrontmatter === -1) {
-      return normalizedContent;
-    }
-  
-    return normalizedContent
-      .slice(endFrontmatter + 5)
-      .trimStart();
+  let normalizedContent = content
+    .replace(/^\uFEFF/, '')
+    .replace(/\r\n/g, '\n');
+
+  normalizedContent = normalizedContent.trimStart();
+
+  if (!normalizedContent.startsWith('---\n')) {
+    return normalizedContent;
   }
+
+  const endFrontmatter = normalizedContent.indexOf(
+    '\n---\n',
+    4
+  );
+
+  if (endFrontmatter === -1) {
+    return normalizedContent;
+  }
+
+  return normalizedContent
+    .slice(endFrontmatter + 5)
+    .trimStart();
+}
+
+function addCodeLineNumbers(content) {
+  return content.replace(
+    /^```(javascript|js)\s*$/gm,
+    '```$1 {.numberLines}'
+  );
+}
 
 if (!fs.existsSync(bookOrderPath)) {
   console.error(
@@ -92,8 +99,12 @@ bookOrder.forEach((relativePath, index) => {
     'utf8'
   );
 
-  const cleanContent = removeFrontmatter(
+  const contentWithoutFrontmatter = removeFrontmatter(
     originalContent
+  );
+
+  const cleanContent = addCodeLineNumbers(
+    contentWithoutFrontmatter
   );
 
   console.log(
@@ -105,7 +116,7 @@ bookOrder.forEach((relativePath, index) => {
   );
 });
 
-const separator ='\n\n';
+const separator = '\n\n';
 
 const finalContent =
   contents.join(separator) + '\n';
@@ -118,6 +129,10 @@ fs.writeFileSync(
 
 console.log(
   '\n✅ Markdown consolidado criado com sucesso.'
+);
+
+console.log(
+  '🔢 Numeração de linhas aplicada aos blocos JavaScript.'
 );
 
 console.log(

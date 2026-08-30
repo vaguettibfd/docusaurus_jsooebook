@@ -60,7 +60,7 @@ Observe o seguinte código de exemplo relativo à declaração de variáveis em 
 ## 💻 Código Completo  
 **Arquivo:** `declvar.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo criado em projeto no www.stackblitz.com denominado declvar.js
 
 var x = 6;
@@ -89,19 +89,19 @@ console.log(y);
 Comentário informativo, não afeta o código.
 
 ### Linha 02
-```javascript
+```javascript {.numberLines}
 var x = 6;
 ```
 Declara a variável `x` usando `var`.
 
 ### Linha 03
-```javascript
+```javascript {.numberLines}
 console.log(x);
 ```
 Resultado: `6`
 
 ### Linha 04
-```javascript
+```javascript {.numberLines}
 const y = "a";
 ```
 Constante com escopo de bloco.
@@ -110,7 +110,7 @@ Constante com escopo de bloco.
 Comentada. Se executada, gera erro.
 
 ### Linha 06
-```javascript
+```javascript {.numberLines}
 console.log(y);
 ```
 Resultado: `"a"`
@@ -133,7 +133,7 @@ Resultado: `"a"`
 ## 💻 Código Completo  
 **Arquivo:** `tipovar.js`
 
-```javascript
+```javascript {.numberLines}
 var numero = 5.2;
 console.log(typeof(numero));
 
@@ -156,7 +156,7 @@ Observe o seguinte código de exemplo relativo à declaração de funções e op
 ## 💻 Código Completo  
 **Arquivo:** `funcbasic.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo criado em projeto no www.stackblitz.com denominado funcbasic.js
 
 // Objetivo de uma função = definir um bloco de código reutilizável
@@ -212,13 +212,13 @@ Define uma função tradicional que recebe dois parâmetros e retorna a soma ent
 - `soma(14, 29)` → **43**
 
 ### Função anônima
-```javascript
+```javascript {.numberLines}
 const subtrair = function(x, y) { return x - y; }
 ```
 Executa **3 - 5 = -2**
 
 ### Arrow functions
-```javascript
+```javascript {.numberLines}
 const dividir = (x, y) => { return x / y; }
 const multiplicar = (x, y) => { return x * y; }
 ```
@@ -265,7 +265,7 @@ Observe o seguinte código de exemplo relativo à declaração de módulos e sua
 ## 💻 Código Completo  
 **Arquivo:** `definemodulo.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo criado em projeto no www.stackblitz.com denominado definemodulo.js
 // Arquivo criado dentro de uma pasta na raiz do projeto
 
@@ -293,13 +293,13 @@ Declara uma função tradicional que recebe dois parâmetros e retorna a soma en
 - `return` devolve o valor para quem chamou a função
 
 ### Função anônima `subtrair`
-```javascript
+```javascript {.numberLines}
 const subtrair = function(x, y) { return x - y; }
 ```
 Função sem nome atribuída a uma constante.
 
 ### `module.exports`
-```javascript
+```javascript {.numberLines}
 module.exports = { soma, subtrair }
 ```
 Define quais funções ficam disponíveis para reutilização em outros arquivos.
@@ -309,7 +309,7 @@ Define quais funções ficam disponíveis para reutilização em outros arquivos
 ## 💻 Código Completo  
 **Arquivo:** `usamodulo.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo criado em projeto no www.stackblitz.com denominado usamodulo.js
 // Arquivo criado na raiz do projeto
 
@@ -327,7 +327,7 @@ console.log(oper.subtrair(y, x));  // 2
 ## 📘 Comentários e Explicações
 
 ### Importação de módulos
-```javascript
+```javascript {.numberLines}
 const oper = require('./biblioteca/definemodulo.js');
 ```
 Importa as funções exportadas no módulo externo utilizando o padrão **CommonJS**.
@@ -395,7 +395,7 @@ A seguir é apresentado um exemplo contendo diferentes formas de criação e uti
 
 **Arquivo:** `arrays.js`
 
-```javascript
+```javascript {.numberLines}
 // Forma 1: Atribuição direta na declaração
 let dadosAluno = ['João', 12345, true];
 console.log('dadosAluno:', dadosAluno);
@@ -438,7 +438,7 @@ console.log('cursos:', cursos);
 
 #### **Linhas 01–04**
 
-```javascript
+```javascript {.numberLines}
 // Forma 1: Atribuição direta na declaração
 let dadosAluno = ['João', 12345, true];
 console.log('dadosAluno:', dadosAluno);
@@ -459,7 +459,7 @@ O primeiro `console.log()` exibe todo o conteúdo do array. O segundo utiliza o 
 
 #### **Linhas 06–12**
 
-```javascript
+```javascript {.numberLines}
 // Forma 2: Criação de um array vazio e atribuição por índice
 let curso = [];
 curso[0] = 'Análise de Sistemas';
@@ -483,7 +483,7 @@ O primeiro `console.log()` exibe todo o array. O segundo acessa apenas o element
 
 #### **Linhas 14–16**
 
-```javascript
+```javascript {.numberLines}
 // Forma 3: Utilização do construtor Array()
 let notas = new Array(7.5, 8.0, 6.9);
 console.log('notas:', notas);
@@ -499,7 +499,7 @@ Embora essa forma seja válida, a sintaxe literal com colchetes costuma ser mais
 
 #### **Linhas 18–20**
 
-```javascript
+```javascript {.numberLines}
 // Forma 4: Array com diferentes tipos de dados
 let infoSistema = ['Ativo', 3.2, false, 'Finalizado'];
 console.log('infoSistema:', infoSistema);
@@ -513,7 +513,7 @@ Essa característica demonstra que os arrays em JavaScript podem reunir strings,
 
 #### **Linhas 22–25**
 
-```javascript
+```javascript {.numberLines}
 // Forma 5: Atualização dos valores de um array
 infoSistema[0] = 'Inativo';
 infoSistema[2] = true;
@@ -530,7 +530,7 @@ Esse exemplo demonstra que os arrays são estruturas mutáveis, pois seus elemen
 
 #### **Linhas 27–30**
 
-```javascript
+```javascript {.numberLines}
 // Forma 6: Array com valores booleanos
 let status = [true, false, true, true];
 console.log('status:', status);
@@ -545,7 +545,7 @@ O primeiro `console.log()` exibe todos os elementos. O segundo acessa o elemento
 
 #### **Linhas 32–34**
 
-```javascript
+```javascript {.numberLines}
 // Forma 7: Array com valores do tipo string
 let cursos = ['ADS', 'SI', 'Engenharia', 'Jogos'];
 console.log('cursos:', cursos);
@@ -563,7 +563,7 @@ Após aprender a criar arrays, o próximo passo é conhecer os principais métod
 
 **Arquivo:** `manipulaArray.js`
 
-```javascript
+```javascript {.numberLines}
 let frutas = ["maçã", "banana"];
 
 frutas.push("laranja");      // adiciona ao final
@@ -591,7 +591,7 @@ console.log(frutas);
 
 #### **Linha 01**
 
-```javascript
+```javascript {.numberLines}
 let frutas = ["maçã", "banana"];
 ```
 
@@ -603,7 +603,7 @@ Esse array será utilizado ao longo do exemplo para demonstrar os principais mé
 
 #### **Linha 03**
 
-```javascript
+```javascript {.numberLines}
 frutas.push("laranja");
 ```
 
@@ -619,7 +619,7 @@ Após sua execução, o conteúdo do array passa a ser:
 
 #### **Linha 05**
 
-```javascript
+```javascript {.numberLines}
 frutas.unshift("uva");
 ```
 
@@ -637,7 +637,7 @@ Todos os elementos existentes são deslocados uma posição para a direita.
 
 #### **Linha 07**
 
-```javascript
+```javascript {.numberLines}
 console.log(frutas);
 ```
 
@@ -653,7 +653,7 @@ O resultado esperado é:
 
 #### **Linha 09**
 
-```javascript
+```javascript {.numberLines}
 console.log("Tamanho:", frutas.length);
 ```
 
@@ -669,7 +669,7 @@ Nesse momento, o array possui quatro elementos e, portanto, o valor retornado se
 
 #### **Linha 11**
 
-```javascript
+```javascript {.numberLines}
 console.log("Primeira fruta:", frutas[0]);
 ```
 
@@ -685,7 +685,7 @@ uva
 
 #### **Linha 13**
 
-```javascript
+```javascript {.numberLines}
 console.log("Última fruta:", frutas[frutas.length - 1]);
 ```
 
@@ -699,7 +699,7 @@ Essa abordagem é recomendada, pois continua funcionando mesmo que a quantidade 
 
 #### **Linha 15**
 
-```javascript
+```javascript {.numberLines}
 frutas.pop();
 ```
 
@@ -715,7 +715,7 @@ Após sua execução, o elemento `"laranja"` é removido e o array passa a conte
 
 #### **Linha 17**
 
-```javascript
+```javascript {.numberLines}
 frutas.shift();
 ```
 
@@ -731,7 +731,7 @@ Nesse exemplo, a string `"uva"` é removida, restando:
 
 #### **Linha 19**
 
-```javascript
+```javascript {.numberLines}
 console.log(frutas);
 ```
 
@@ -873,7 +873,7 @@ Observe o código a seguir.
 
 **Arquivo:** `lacos.js`
 
-```javascript
+```javascript {.numberLines}
 console.log("Laço for:");
 
 for (let i = 1; i <= 5; i++) {
@@ -905,7 +905,7 @@ do {
 
 ### **Linhas 01–05**
 
-```javascript
+```javascript {.numberLines}
 console.log("Laço for:");
 
 for (let i = 1; i <= 5; i++) {
@@ -931,7 +931,7 @@ Como resultado, serão exibidos os valores de **1 até 5**.
 
 ### **Linhas 07–14**
 
-```javascript
+```javascript {.numberLines}
 console.log("Laço while:");
 
 let j = 1;
@@ -956,7 +956,7 @@ Assim como no exemplo anterior, o programa exibirá os números de **1 até 5**.
 
 ### **Linhas 16–23**
 
-```javascript
+```javascript {.numberLines}
 console.log("Laço do...while:");
 
 let k = 5;
@@ -1007,7 +1007,7 @@ Observe o código a seguir.
 
 **Arquivo:** `lacosarray.js`
 
-```javascript
+```javascript {.numberLines}
 let frutas = ["maçã", "banana", "laranja", "uva", "melancia"];
 
 console.log("FOR:");
@@ -1047,7 +1047,7 @@ for (let fruta of frutas) {
 
 ### **Linhas 01–07**
 
-```javascript
+```javascript {.numberLines}
 let frutas = ["maçã", "banana", "laranja", "uva", "melancia"];
 
 console.log("FOR:");
@@ -1065,7 +1065,7 @@ A variável `i` representa o índice do array e inicia com o valor `0`, correspo
 
 A condição:
 
-```javascript
+```javascript {.numberLines}
 i < frutas.length
 ```
 
@@ -1075,7 +1075,7 @@ A cada repetição, `i++` incrementa a variável de controle, permitindo acessar
 
 A template string utilizada no `console.log()` exibe tanto a posição quanto o conteúdo armazenado:
 
-```javascript
+```javascript {.numberLines}
 `Fruta na posição ${i}: ${frutas[i]}`
 ```
 
@@ -1083,7 +1083,7 @@ A template string utilizada no `console.log()` exibe tanto a posição quanto o 
 
 ### **Linhas 09–16**
 
-```javascript
+```javascript {.numberLines}
 console.log("WHILE:");
 
 let j = 0;
@@ -1100,7 +1100,7 @@ A variável `j` é inicializada com o valor `0` antes do início da repetição.
 
 Enquanto a condição:
 
-```javascript
+```javascript {.numberLines}
 j < frutas.length
 ```
 
@@ -1108,7 +1108,7 @@ for verdadeira, o elemento armazenado na posição `j` será exibido.
 
 Ao final de cada repetição, o comando:
 
-```javascript
+```javascript {.numberLines}
 j++;
 ```
 
@@ -1120,7 +1120,7 @@ O resultado é equivalente ao obtido com o laço `for`, embora a inicialização
 
 ### **Linhas 18–25**
 
-```javascript
+```javascript {.numberLines}
 console.log("DO...WHILE:");
 
 let k = 0;
@@ -1139,7 +1139,7 @@ O bloco iniciado por `do` é executado antes da verificação da condição. Por
 
 Após exibir o elemento atual, o comando:
 
-```javascript
+```javascript {.numberLines}
 k++;
 ```
 
@@ -1147,7 +1147,7 @@ incrementa a variável de controle.
 
 Em seguida, a condição:
 
-```javascript
+```javascript {.numberLines}
 k < frutas.length
 ```
 
@@ -1157,7 +1157,7 @@ k < frutas.length
 
 ### **Linhas 27–31**
 
-```javascript
+```javascript {.numberLines}
 console.log("FOR...OF:");
 
 for (let fruta of frutas) {
@@ -3255,7 +3255,7 @@ operadores lógicos em JavaScript.
 
 **Arquivo:** `Aluno.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo criado em projeto no www.stackblitz.com denominado Aluno.js
 // Arquivo criado dentro de uma pasta /objetos/pessoas na raiz do projeto
 // Objetivo do exemplo: demonstrar conceitos de Herança, bem como
@@ -3387,7 +3387,7 @@ Encerram a classe e exportam o módulo utilizando `module.exports`.
 Adicione o trecho abaixo ao final do arquivo para testar a classe
 `Aluno`.
 
-```javascript
+```javascript {.numberLines}
  console.log("==== Objeto Aluno =====");
  const Aluno = require('./pessoas/Aluno');
  const w = new Aluno();
@@ -3533,7 +3533,7 @@ Para garantir a consistência das associações, os métodos responsáveis pelos
 
 **Arquivo:** `Pessoa.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo Pessoa.js
 
 const Telefone = require('./Telefone');
@@ -3613,7 +3613,7 @@ module.exports = Pessoa;
 
 #### **Linhas 01–03**
 
-```javascript
+```javascript {.numberLines}
 const Telefone = require('./Telefone');
 const Endereco = require('./Endereco');
 ```
@@ -3626,7 +3626,7 @@ Essas importações permitem que objetos dessas classes sejam utilizados durante
 
 #### **Linhas 05–11**
 
-```javascript
+```javascript {.numberLines}
 class Pessoa {
 
     #nome;
@@ -3649,7 +3649,7 @@ Os atributos `#endereco` e `#telefones` representam os relacionamentos com outra
 
 #### **Linhas 13–21 — Método `setEndereco()`**
 
-```javascript
+```javascript {.numberLines}
 setEndereco(endereco) {
     if (endereco instanceof Endereco) {
         this.#endereco = endereco;
@@ -3676,7 +3676,7 @@ Caso o objeto informado não seja válido, o método retorna `false`.
 
 #### **Linhas 23–25 — Método `getEndereco()`**
 
-```javascript
+```javascript {.numberLines}
 getEndereco() {
     return this.#endereco;
 }
@@ -3688,7 +3688,7 @@ Retorna o objeto `Endereco` atualmente associado à pessoa.
 
 #### **Linhas 27–35 — Método `addTelefone()`**
 
-```javascript
+```javascript {.numberLines}
 addTelefone(telefone) {
     if (telefone instanceof Telefone) {
         this.#telefones.push(telefone);
@@ -3710,7 +3710,7 @@ Além de armazenar o telefone, também é criada uma referência cruzada por mei
 
 #### **Linhas 37–39 — Método `getTelefones()`**
 
-```javascript
+```javascript {.numberLines}
 getTelefones() {
     return this.#telefones;
 }
@@ -3739,7 +3739,7 @@ Os métodos `get` retornam os valores armazenados nos respectivos atributos priv
 
 #### **Linha 61**
 
-```javascript
+```javascript {.numberLines}
 module.exports = Pessoa;
 ```
 
@@ -3785,7 +3785,7 @@ Embora uma pessoa possua apenas um endereço em nosso exemplo, um mesmo endereç
 
 **Arquivo:** `Endereco.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo Endereco.js
 
 class Endereco {
@@ -3844,7 +3844,7 @@ module.exports = Endereco;
 
 #### **Linhas 01–06**
 
-```javascript
+```javascript {.numberLines}
 class Endereco {
 
     #logradouro;
@@ -3862,7 +3862,7 @@ O atributo `#pessoas` é um array responsável por armazenar todas as pessoas as
 
 #### **Linhas 08–16 — Método `addPessoa()`**
 
-```javascript
+```javascript {.numberLines}
 addPessoa(pessoa) {
     if (pessoa) {
         this.#pessoas.push(pessoa);
@@ -3886,7 +3886,7 @@ O método retorna:
 
 #### **Linhas 18–20 — Método `getPessoas()`**
 
-```javascript
+```javascript {.numberLines}
 getPessoas() {
     return this.#pessoas;
 }
@@ -3900,7 +3900,7 @@ Esse método permite recuperar todos os objetos `Pessoa` vinculados a esse ender
 
 #### **Linhas 22–30 — Métodos `setLogradouro()` e `getLogradouro()`**
 
-```javascript
+```javascript {.numberLines}
 setLogradouro(logradouro) {
     if (logradouro) {
         this.#logradouro = logradouro;
@@ -3923,7 +3923,7 @@ O método `setLogradouro()` realiza uma validação simples, verificando se o va
 
 #### **Linhas 32–40 — Métodos `setCep()` e `getCep()`**
 
-```javascript
+```javascript {.numberLines}
 setCep(cep) {
     if (cep) {
         this.#cep = cep;
@@ -3946,7 +3946,7 @@ Assim como os demais métodos `set`, a atribuição somente é realizada quando 
 
 #### **Linha 42**
 
-```javascript
+```javascript {.numberLines}
 module.exports = Endereco;
 ```
 
@@ -3996,7 +3996,7 @@ Para representar essa associação, a classe mantém um array contendo todas as 
 
 **Arquivo:** `Telefone.js`
 
-```javascript
+```javascript {.numberLines}
 // Arquivo Telefone.js
 
 class Telefone {
@@ -4041,7 +4041,7 @@ module.exports = Telefone;
 
 #### **Linhas 01–05**
 
-```javascript
+```javascript {.numberLines}
 class Telefone {
 
     #numero;
@@ -4056,7 +4056,7 @@ O atributo `#numero` armazena o número telefônico, enquanto `#pessoas` mantém
 
 #### **Linhas 07–15 — Método `addPessoa()`**
 
-```javascript
+```javascript {.numberLines}
 addPessoa(pessoa) {
     if (pessoa) {
         this.#pessoas.push(pessoa);
@@ -4080,7 +4080,7 @@ O método retorna:
 
 #### **Linhas 17–19 — Método `getPessoas()`**
 
-```javascript
+```javascript {.numberLines}
 getPessoas() {
     return this.#pessoas;
 }
@@ -4094,7 +4094,7 @@ Esse método permite percorrer o relacionamento no sentido inverso, identificand
 
 #### **Linhas 21–29 — Métodos `setNumero()` e `getNumero()`**
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     if (numero) {
         this.#numero = numero;
@@ -4117,7 +4117,7 @@ O método `setNumero()` realiza uma validação simples antes de armazenar o val
 
 #### **Linha 31**
 
-```javascript
+```javascript {.numberLines}
 module.exports = Telefone;
 ```
 
@@ -4193,7 +4193,7 @@ Além do atributo `cpf`, essa classe mantém uma referência para um objeto da c
 
 **Arquivo:** `PF.js`
 
-```javascript
+```javascript {.numberLines}
 const Pessoa = require('./Pessoa');
 const Titulo = require('./Titulo');
 
@@ -4240,7 +4240,7 @@ module.exports = PF;
 
 #### **Linhas 01–02**
 
-```javascript
+```javascript {.numberLines}
 const Pessoa = require('./Pessoa');
 const Titulo = require('./Titulo');
 ```
@@ -4253,7 +4253,7 @@ A classe `Pessoa` será utilizada como superclasse, enquanto `Titulo` será util
 
 #### **Linhas 04–08**
 
-```javascript
+```javascript {.numberLines}
 class PF extends Pessoa {
 
     #cpf;
@@ -4273,7 +4273,7 @@ São adicionados dois novos atributos privados:
 
 #### **Linhas 10–18 — Método `setCPF()`**
 
-```javascript
+```javascript {.numberLines}
 setCPF(cpf) {
     if (cpf) {
         this.#cpf = cpf;
@@ -4292,7 +4292,7 @@ Caso o valor informado seja válido, o método retorna `true`; caso contrário, 
 
 #### **Linhas 20–22 — Método `getCPF()`**
 
-```javascript
+```javascript {.numberLines}
 getCPF() {
     return this.#cpf;
 }
@@ -4304,7 +4304,7 @@ Retorna o CPF armazenado no objeto.
 
 #### **Linhas 24–33 — Método `setTitulo()`**
 
-```javascript
+```javascript {.numberLines}
 setTitulo(titulo) {
     if (titulo instanceof Titulo) {
         this.#titulo = titulo;
@@ -4331,7 +4331,7 @@ Essa implementação garante que ambos os objetos conheçam a associação exist
 
 #### **Linhas 35–37 — Método `getTitulo()`**
 
-```javascript
+```javascript {.numberLines}
 getTitulo() {
     return this.#titulo;
 }
@@ -4343,7 +4343,7 @@ Retorna o objeto `Titulo` associado à pessoa física.
 
 #### **Linha 39**
 
-```javascript
+```javascript {.numberLines}
 module.exports = PF;
 ```
 
@@ -4397,7 +4397,7 @@ A classe também mantém uma referência para o objeto `PF`, permitindo navegar 
 
 **Arquivo:** `Titulo.js`
 
-```javascript
+```javascript {.numberLines}
 // Código Titulo.js
 
 class Titulo {
@@ -4473,7 +4473,7 @@ module.exports = Titulo;
 
 #### **Linhas 01–06**
 
-```javascript
+```javascript {.numberLines}
 class Titulo {
 
     #numero;
@@ -4495,7 +4495,7 @@ Todos os atributos são privados, garantindo o encapsulamento das informações.
 
 #### **Linhas 08–18 — Métodos `setNumero()` e `getNumero()`**
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     if (numero) {
         this.#numero = numero;
@@ -4518,7 +4518,7 @@ O método `setNumero()` realiza uma validação simples antes de armazenar o val
 
 #### **Linhas 20–30 — Métodos `setZona()` e `getZona()`**
 
-```javascript
+```javascript {.numberLines}
 setZona(zona) {
     if (zona) {
         this.#zona = zona;
@@ -4541,7 +4541,7 @@ Assim como os demais métodos `set`, somente valores válidos são armazenados.
 
 #### **Linhas 32–42 — Métodos `setSecao()` e `getSecao()`**
 
-```javascript
+```javascript {.numberLines}
 setSecao(secao) {
     if (secao) {
         this.#secao = secao;
@@ -4562,7 +4562,7 @@ Esses métodos armazenam e retornam a seção eleitoral correspondente ao títul
 
 #### **Linhas 44–57 — Relacionamento com a classe `PF`**
 
-```javascript
+```javascript {.numberLines}
 #pf;
 
 setPF(pf) {
@@ -4591,7 +4591,7 @@ Essa implementação caracteriza uma **referência cruzada**, pois tanto `PF` qu
 
 #### **Linha 59**
 
-```javascript
+```javascript {.numberLines}
 module.exports = Titulo;
 ```
 
@@ -4670,7 +4670,7 @@ Verificar as Referências Cruzadas
 
 **Arquivo:** `usaPF.js`
 
-```javascript
+```javascript {.numberLines}
 const Telefone = require('./pessoas/Telefone');
 const Endereco = require('./pessoas/Endereco');
 const Titulo = require('./pessoas/Titulo');
@@ -4724,7 +4724,7 @@ console.log(titulo.getPF().getNome());
 
 ### **Linhas 01–04 — Importação das Classes**
 
-```javascript
+```javascript {.numberLines}
 const Telefone = require('./pessoas/Telefone');
 const Endereco = require('./pessoas/Endereco');
 const Titulo = require('./pessoas/Titulo');
@@ -4740,7 +4740,7 @@ Cada classe foi implementada em um módulo independente e exportada utilizando `
 
 ### **Linhas 06–08 — Criação dos Objetos**
 
-```javascript
+```javascript {.numberLines}
 const end = new Endereco();
 
 const fone1 = new Telefone();
@@ -4760,7 +4760,7 @@ Esses objetos serão posteriormente associados à pessoa física.
 
 ### **Linhas 10–13 — Configuração dos Objetos**
 
-```javascript
+```javascript {.numberLines}
 end.setLogradouro('QNM 40');
 
 fone1.setNumero('1234-5678');
@@ -4775,7 +4775,7 @@ Os valores são atribuídos por meio dos métodos `set`, preservando o encapsula
 
 ### **Linhas 15–17 — Criação do Título**
 
-```javascript
+```javascript {.numberLines}
 const titulo = new Titulo();
 
 titulo.setNumero('1234156');
@@ -4790,7 +4790,7 @@ Esse objeto será associado posteriormente à pessoa física.
 
 ### **Linhas 19–29 — Criação da Pessoa Física e dos Relacionamentos**
 
-```javascript
+```javascript {.numberLines}
 const obj = new PF();
 
 obj.setNome('José');
@@ -4817,7 +4817,7 @@ Durante essas associações, as referências cruzadas também são criadas autom
 
 ### **Linhas 31–37 — Consulta das Informações**
 
-```javascript
+```javascript {.numberLines}
 console.log(obj.getNome());
 
 console.log(obj.getEndereco().getLogradouro());
@@ -4842,7 +4842,7 @@ Esses dados demonstram que os relacionamentos foram criados corretamente.
 
 ### **Linhas 39–45 — Verificação das Referências Cruzadas**
 
-```javascript
+```javascript {.numberLines}
 console.log(end.getPessoas());
 
 console.log(fone1.getPessoas());
@@ -5007,7 +5007,7 @@ O ESM permite diferentes formas de exportar recursos.
 
 A exportação padrão pode ser realizada utilizando:
 
-```javascript
+```javascript {.numberLines}
 export default
 ```
 
@@ -5017,7 +5017,7 @@ Durante a importação, não é necessário utilizar exatamente o mesmo nome uti
 
 Exemplo:
 
-```javascript
+```javascript {.numberLines}
 import IE from "./IE.mjs";
 ```
 
@@ -5029,13 +5029,13 @@ Também podemos exportar recursos utilizando uma **exportação nomeada**.
 
 Exemplo:
 
-```javascript
+```javascript {.numberLines}
 export { IEfunc, IEjson };
 ```
 
 Nesse caso, durante a importação, os nomes exportados são informados entre chaves:
 
-```javascript
+```javascript {.numberLines}
 import { IEfunc, IEjson } from "./IE.mjs";
 ```
 
@@ -5053,7 +5053,7 @@ A mesma entidade será representada utilizando três abordagens diferentes:
 
 A primeira implementação utiliza uma **classe JavaScript**.
 
-```javascript
+```javascript {.numberLines}
 class IEclss {
     // implementação
 }
@@ -5067,7 +5067,7 @@ Essa abordagem permite reunir atributos e métodos em uma estrutura que poderá 
 
 A segunda abordagem utiliza uma função responsável por criar e retornar um objeto.
 
-```javascript
+```javascript {.numberLines}
 function IEfunc() {
     // implementação
 }
@@ -5083,7 +5083,7 @@ A cada chamada, a função poderá criar e retornar um novo objeto contendo suas
 
 A terceira implementação utiliza um **objeto literal JavaScript**.
 
-```javascript
+```javascript {.numberLines}
 const IEjson = {
     // implementação
 };
@@ -5150,7 +5150,7 @@ Além disso, a classe possui um atributo destinado a armazenar uma referência p
 
 **Arquivo:** `IE.mjs`
 
-```javascript
+```javascript {.numberLines}
 export default class IEclss {
     #numero;
     #estado;
@@ -5217,7 +5217,7 @@ export default class IEclss {
 
 ### **Linhas 01–05**
 
-```javascript
+```javascript {.numberLines}
 export default class IEclss {
     #numero;
     #estado;
@@ -5244,7 +5244,7 @@ O atributo `#pj` será utilizado para armazenar uma referência para um objeto q
 
 ### **Linhas 07–19**
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     if (numero) {
         this.#numero = numero;
@@ -5263,19 +5263,19 @@ O método `setNumero()` recebe como parâmetro o número da Inscrição Estadual
 
 Inicialmente, é realizada uma validação:
 
-```javascript
+```javascript {.numberLines}
 if (numero)
 ```
 
 Caso um valor seja informado, ele será armazenado no atributo privado:
 
-```javascript
+```javascript {.numberLines}
 this.#numero = numero;
 ```
 
 Após realizar a atribuição, o método retorna:
 
-```javascript
+```javascript {.numberLines}
 return true;
 ```
 
@@ -5287,7 +5287,7 @@ O método `getNumero()` permite recuperar o valor armazenado no atributo privado
 
 ### **Linhas 21–33**
 
-```javascript
+```javascript {.numberLines}
 setEstado(estado) {
     if (estado) {
         this.#estado = estado;
@@ -5308,7 +5308,7 @@ O método `setEstado()` verifica inicialmente se algum valor foi informado.
 
 Caso a condição:
 
-```javascript
+```javascript {.numberLines}
 if (estado)
 ```
 
@@ -5322,7 +5322,7 @@ O método `getEstado()` permite recuperar posteriormente o estado armazenado.
 
 ### **Linhas 35–47**
 
-```javascript
+```javascript {.numberLines}
 setDataRegistro(dataRegistro) {
     if (dataRegistro instanceof Date) {
         this.#dataRegistro = dataRegistro;
@@ -5343,7 +5343,7 @@ Nesse caso, o operador `instanceof` é utilizado para verificar se o valor receb
 
 A expressão:
 
-```javascript
+```javascript {.numberLines}
 dataRegistro instanceof Date
 ```
 
@@ -5351,7 +5351,7 @@ retorna `true` quando `dataRegistro` representa uma instância de `Date`.
 
 Somente nesse caso o valor será armazenado no atributo privado:
 
-```javascript
+```javascript {.numberLines}
 this.#dataRegistro = dataRegistro;
 ```
 
@@ -5363,7 +5363,7 @@ O método `getDataRegistro()` permite recuperar posteriormente a data armazenada
 
 ### **Linhas 49–61**
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj) {
     if (pj) {
         this.#pj = pj;
@@ -5382,13 +5382,13 @@ O método `setPJ()` permite associar à Inscrição Estadual um objeto que repre
 
 Neste momento, é realizada apenas a validação da existência do valor recebido:
 
-```javascript
+```javascript {.numberLines}
 if (pj)
 ```
 
 Caso um objeto seja informado, sua referência será armazenada no atributo privado:
 
-```javascript
+```javascript {.numberLines}
 this.#pj = pj;
 ```
 
@@ -5451,7 +5451,7 @@ Essa abordagem permite encapsular informações dentro do escopo da função, di
 
 **Arquivo:** `IE.mjs`
 
-```javascript
+```javascript {.numberLines}
 export function IEfunc() {
     let dados = {
         numero: null,
@@ -5531,7 +5531,7 @@ export function IEfunc() {
 
 ### **Linhas 01–07**
 
-```javascript
+```javascript {.numberLines}
 export function IEfunc() {
     let dados = {
         numero: null,
@@ -5545,7 +5545,7 @@ A função `IEfunc()` é declarada utilizando `export`, indicando que poderá se
 
 Dentro da função é criado o objeto:
 
-```javascript
+```javascript {.numberLines}
 dados
 ```
 
@@ -5564,7 +5564,7 @@ Essa característica é importante porque impede o acesso direto aos dados fora 
 
 ### **Linhas 09–21**
 
-```javascript
+```javascript {.numberLines}
 function setNumero(numero) {
     if (numero) {
         dados.numero = numero;
@@ -5585,13 +5585,13 @@ O método `setNumero()` verifica se algum valor foi informado.
 
 Quando a condição:
 
-```javascript
+```javascript {.numberLines}
 if (numero)
 ```
 
 for verdadeira, o valor será armazenado em:
 
-```javascript
+```javascript {.numberLines}
 dados.numero
 ```
 
@@ -5603,7 +5603,7 @@ O método `getNumero()` retorna o valor armazenado.
 
 ### **Linhas 23–35**
 
-```javascript
+```javascript {.numberLines}
 function setEstado(estado) {
     if (estado) {
         dados.estado = estado;
@@ -5624,7 +5624,7 @@ O método `setEstado()` verifica se o valor recebido é válido antes de armazen
 
 O valor aceito será armazenado em:
 
-```javascript
+```javascript {.numberLines}
 dados.estado
 ```
 
@@ -5634,7 +5634,7 @@ O método `getEstado()` permite recuperar posteriormente essa informação.
 
 ### **Linhas 37–49**
 
-```javascript
+```javascript {.numberLines}
 function setDataRegistro(data) {
     if (data instanceof Date) {
         dados.dataRegistro = data;
@@ -5653,13 +5653,13 @@ O método `setDataRegistro()` utiliza o operador `instanceof` para verificar se 
 
 A condição:
 
-```javascript
+```javascript {.numberLines}
 data instanceof Date
 ```
 
 garante que somente objetos de data sejam armazenados em:
 
-```javascript
+```javascript {.numberLines}
 dados.dataRegistro
 ```
 
@@ -5669,7 +5669,7 @@ O método `getDataRegistro()` retorna posteriormente a data armazenada.
 
 ### **Linhas 51–63**
 
-```javascript
+```javascript {.numberLines}
 function setPJ(pj) {
     if (pj) {
         dados.pj = pj;
@@ -5688,13 +5688,13 @@ O método `setPJ()` permite associar ao objeto interno `dados` uma referência p
 
 Neste momento, é realizada apenas a validação da existência do valor:
 
-```javascript
+```javascript {.numberLines}
 if (pj)
 ```
 
 Caso algum objeto seja informado, ele será armazenado em:
 
-```javascript
+```javascript {.numberLines}
 dados.pj
 ```
 
@@ -5706,7 +5706,7 @@ Assim como na implementação da classe `IEclss`, a validação específica do t
 
 ### **Linhas 65–74**
 
-```javascript
+```javascript {.numberLines}
 return {
     setNumero,
     getNumero,
@@ -5791,7 +5791,7 @@ Apesar do nome utilizado, é importante compreender que `IEjson` é um **objeto 
 
 **Arquivo:** `IE.mjs`
 
-```javascript
+```javascript {.numberLines}
 export const IEjson = {
     numero: null,
     estado: null,
@@ -5858,7 +5858,7 @@ export const IEjson = {
 
 ### **Linhas 01–05**
 
-```javascript
+```javascript {.numberLines}
 export const IEjson = {
     numero: null,
     estado: null,
@@ -5868,7 +5868,7 @@ export const IEjson = {
 
 O objeto `IEjson` é declarado utilizando:
 
-```javascript
+```javascript {.numberLines}
 export const IEjson = {
 ```
 
@@ -5891,7 +5891,7 @@ Diferentemente da classe `IEclss`, essas propriedades não utilizam o caractere 
 
 ### **Linhas 07–21**
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     if (numero) {
         this.numero = numero;
@@ -5912,13 +5912,13 @@ O método `setNumero()` verifica inicialmente se algum valor foi informado.
 
 Quando a condição:
 
-```javascript
+```javascript {.numberLines}
 if (numero)
 ```
 
 for verdadeira, o valor recebido será armazenado na propriedade:
 
-```javascript
+```javascript {.numberLines}
 this.numero
 ```
 
@@ -5930,7 +5930,7 @@ O método `getNumero()` retorna posteriormente o valor armazenado.
 
 ### **Linhas 23–37**
 
-```javascript
+```javascript {.numberLines}
 setEstado(estado) {
     if (estado) {
         this.estado = estado;
@@ -5949,7 +5949,7 @@ Os métodos `setEstado()` e `getEstado()` controlam a alteração e a recuperaç
 
 O método `setEstado()` verifica se algum valor foi informado e, caso a condição seja satisfeita, realiza a atribuição:
 
-```javascript
+```javascript {.numberLines}
 this.estado = estado;
 ```
 
@@ -5959,7 +5959,7 @@ O método `getEstado()` retorna o valor armazenado no próprio objeto.
 
 ### **Linhas 39–53**
 
-```javascript
+```javascript {.numberLines}
 setDataRegistro(data) {
     if (data instanceof Date) {
         this.dataRegistro = data;
@@ -5978,7 +5978,7 @@ O método `setDataRegistro()` utiliza novamente o operador `instanceof`.
 
 A expressão:
 
-```javascript
+```javascript {.numberLines}
 data instanceof Date
 ```
 
@@ -5986,7 +5986,7 @@ verifica se o valor recebido é uma instância da classe nativa `Date`.
 
 Caso a condição seja verdadeira, o objeto será armazenado em:
 
-```javascript
+```javascript {.numberLines}
 this.dataRegistro
 ```
 
@@ -5996,7 +5996,7 @@ O método `getDataRegistro()` permite recuperar posteriormente a data armazenada
 
 ### **Linhas 55–69**
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj) {
     if (pj) {
         this.pj = pj;
@@ -6015,13 +6015,13 @@ O método `setPJ()` permite armazenar uma referência para um objeto que futuram
 
 Neste momento, a validação verifica apenas se algum valor foi informado:
 
-```javascript
+```javascript {.numberLines}
 if (pj)
 ```
 
 Caso a condição seja verdadeira, a referência será armazenada em:
 
-```javascript
+```javascript {.numberLines}
 this.pj
 ```
 
@@ -6037,7 +6037,7 @@ O nome `IEjson` utilizado neste exemplo permite estabelecer uma relação com o 
 
 Um objeto literal JavaScript e um conteúdo JSON podem apresentar uma estrutura visual semelhante. Por exemplo, um conjunto de dados poderia ser representado desta forma:
 
-```javascript
+```javascript {.numberLines}
 {
     numero: "123456",
     estado: "DF"
@@ -6048,7 +6048,7 @@ Entretanto, existem diferenças importantes.
 
 O objeto `IEjson` desenvolvido neste capítulo é um **objeto JavaScript** e, por isso, pode possuir propriedades e métodos, como:
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     // ...
 }
@@ -6148,7 +6148,7 @@ Observe a comparação:
 
 Na implementação utilizando classe, os dados são armazenados em atributos privados:
 
-```javascript
+```javascript {.numberLines}
 #numero;
 #estado;
 #dataRegistro;
@@ -6157,7 +6157,7 @@ Na implementação utilizando classe, os dados são armazenados em atributos pri
 
 O acesso ocorre por meio de métodos como:
 
-```javascript
+```javascript {.numberLines}
 setNumero()
 getNumero()
 setEstado()
@@ -6166,7 +6166,7 @@ getEstado()
 
 Para criar um objeto a partir da classe, utiliza-se o operador `new`:
 
-```javascript
+```javascript {.numberLines}
 const ieC = new IEclss();
 ```
 
@@ -6178,7 +6178,7 @@ Essa abordagem aplica diretamente o conceito de **encapsulamento**, pois os atri
 
 Na função fábrica, os dados são armazenados dentro do escopo da função:
 
-```javascript
+```javascript {.numberLines}
 let dados = {
     numero: null,
     estado: null,
@@ -6189,7 +6189,7 @@ let dados = {
 
 A função retorna somente os métodos que poderão ser utilizados externamente:
 
-```javascript
+```javascript {.numberLines}
 return {
     setNumero,
     getNumero,
@@ -6204,7 +6204,7 @@ return {
 
 Para criar uma nova estrutura, basta executar a função:
 
-```javascript
+```javascript {.numberLines}
 const ieF = IEfunc();
 ```
 
@@ -6218,7 +6218,7 @@ Os métodos retornados continuam acessando o objeto `dados`, mesmo após o térm
 
 Na terceira implementação, propriedades e métodos são definidos diretamente dentro de um objeto:
 
-```javascript
+```javascript {.numberLines}
 const IEjson = {
     numero: null,
     estado: null,
@@ -6231,7 +6231,7 @@ Não é necessário utilizar `new` nem executar uma função para obter o objeto
 
 Ele pode ser utilizado diretamente:
 
-```javascript
+```javascript {.numberLines}
 IEjson.setNumero("333");
 IEjson.setEstado("MG");
 ```
@@ -6240,7 +6240,7 @@ Diferentemente das duas abordagens anteriores, as propriedades do objeto literal
 
 Por exemplo:
 
-```javascript
+```javascript {.numberLines}
 IEjson.numero
 ```
 
@@ -6274,7 +6274,7 @@ Outro aspecto importante deste exemplo é a utilização de diferentes formas de
 
 A classe `IEclss` foi definida como a exportação padrão:
 
-```javascript
+```javascript {.numberLines}
 export default class IEclss {
     // ...
 }
@@ -6282,7 +6282,7 @@ export default class IEclss {
 
 Já `IEfunc()` e `IEjson` utilizam exportações nomeadas:
 
-```javascript
+```javascript {.numberLines}
 export function IEfunc() {
     // ...
 }
@@ -6296,7 +6296,7 @@ Dessa forma, o mesmo módulo `IE.mjs` disponibiliza uma **exportação padrão**
 
 Posteriormente, essas estruturas poderão ser importadas utilizando uma única instrução:
 
-```javascript
+```javascript {.numberLines}
 import IEclss, { IEfunc, IEjson } from "./IE.mjs";
 ```
 
@@ -6366,7 +6366,7 @@ Além disso, o exemplo permite comparar as diferentes formas de criação e util
 
 **Arquivo:** `usaIE.mjs`
 
-```javascript
+```javascript {.numberLines}
 import IEclss, { IEfunc, IEjson } from './IE.mjs';
 
 const agora = new Date();
@@ -6415,7 +6415,7 @@ console.log(
 
 ### **Linhas 01–03**
 
-```javascript
+```javascript {.numberLines}
 import IEclss, { IEfunc, IEjson } from './IE.mjs';
 
 const agora = new Date();
@@ -6425,7 +6425,7 @@ A primeira linha importa as três estruturas definidas anteriormente no arquivo 
 
 Observe que:
 
-```javascript
+```javascript {.numberLines}
 IEclss
 ```
 
@@ -6433,7 +6433,7 @@ IEclss
 
 Já:
 
-```javascript
+```javascript {.numberLines}
 { IEfunc, IEjson }
 ```
 
@@ -6443,7 +6443,7 @@ Essa instrução demonstra, em uma única linha, a utilização conjunta de uma 
 
 Em seguida, é criado um objeto da classe nativa `Date`:
 
-```javascript
+```javascript {.numberLines}
 const agora = new Date();
 ```
 
@@ -6453,7 +6453,7 @@ Esse objeto será utilizado como data de registro nas três implementações.
 
 ### **Linhas 05–09**
 
-```javascript
+```javascript {.numberLines}
 const ieC = new IEclss();
 
 ieC.setNumero('111');
@@ -6465,7 +6465,7 @@ Nesse bloco é criada uma instância da classe `IEclss`.
 
 Como `IEclss` é uma classe, utiliza-se o operador:
 
-```javascript
+```javascript {.numberLines}
 new
 ```
 
@@ -6477,7 +6477,7 @@ Em seguida, os métodos `setNumero()`, `setEstado()` e `setDataRegistro()` são 
 
 ### **Linhas 11–14**
 
-```javascript
+```javascript {.numberLines}
 console.log(`(Classe) Número: ${ieC.getNumero()}`);
 console.log(`(Classe) Estado: ${ieC.getEstado()}`);
 console.log(`(Classe) Data: ${ieC.getDataRegistro().toLocaleString('pt-BR')}`);
@@ -6488,7 +6488,7 @@ Os métodos `getNumero()`, `getEstado()` e `getDataRegistro()` recuperam os valo
 
 Para apresentar a data, é utilizado:
 
-```javascript
+```javascript {.numberLines}
 toLocaleString('pt-BR')
 ```
 
@@ -6504,7 +6504,7 @@ correspondente ao português do Brasil.
 
 As informações são inseridas nas strings utilizando **Template Literals** e a sintaxe:
 
-```javascript
+```javascript {.numberLines}
 ${...}
 ```
 
@@ -6512,7 +6512,7 @@ ${...}
 
 ### **Linhas 16–20**
 
-```javascript
+```javascript {.numberLines}
 const ieF = IEfunc();
 
 ieF.setNumero('222');
@@ -6526,13 +6526,13 @@ Diferentemente da classe, não utilizamos o operador `new`.
 
 A função é executada diretamente:
 
-```javascript
+```javascript {.numberLines}
 IEfunc()
 ```
 
 e o objeto retornado é armazenado em:
 
-```javascript
+```javascript {.numberLines}
 ieF
 ```
 
@@ -6542,7 +6542,7 @@ Em seguida, os métodos disponibilizados pela função fábrica são utilizados 
 
 ### **Linhas 22–25**
 
-```javascript
+```javascript {.numberLines}
 console.log(`(Factory) Número: ${ieF.getNumero()}`);
 console.log(`(Factory) Estado: ${ieF.getEstado()}`);
 console.log(`(Factory) Data: ${ieF.getDataRegistro().toLocaleString('pt-BR')}`);
@@ -6559,7 +6559,7 @@ Esse comportamento está relacionado ao conceito de **closure** apresentado ante
 
 ### **Linhas 27–29**
 
-```javascript
+```javascript {.numberLines}
 IEjson.setNumero('333');
 IEjson.setEstado('MG');
 IEjson.setDataRegistro(agora);
@@ -6569,7 +6569,7 @@ Nesse trecho é utilizado diretamente o objeto literal `IEjson`.
 
 Não é necessário utilizar:
 
-```javascript
+```javascript {.numberLines}
 new
 ```
 
@@ -6587,7 +6587,7 @@ Os valores definidos nesse exemplo são:
 
 ### **Linhas 31–34**
 
-```javascript
+```javascript {.numberLines}
 console.log(`(Objeto Literal) Número: ${IEjson.getNumero()}`);
 console.log(`(Objeto Literal) Estado: ${IEjson.getEstado()}`);
 console.log(`(Objeto Literal) Data: ${IEjson.getDataRegistro().toLocaleString('pt-BR')}`);
@@ -6604,7 +6604,7 @@ Observe que o resultado obtido é semelhante ao das duas implementações anteri
 
 ### **Linhas 36–41**
 
-```javascript
+```javascript {.numberLines}
 console.log(
     `Resumo → Classe: ${ieC.getNumero()}-${ieC.getEstado()} | ` +
     `Factory: ${ieF.getNumero()}-${ieF.getEstado()} | ` +
@@ -6616,7 +6616,7 @@ O último bloco apresenta um resumo contendo informações das três implementa�
 
 São utilizadas **Template Literals** para inserir valores diretamente nas strings:
 
-```javascript
+```javascript {.numberLines}
 ${ieC.getNumero()}
 ```
 
@@ -6827,7 +6827,7 @@ Além do atributo `#cnpj`, já estudado anteriormente, será acrescentado o atri
 
 **Arquivo:** `/pessoas/PJ.js`
 
-```javascript
+```javascript {.numberLines}
 const Pessoa = require('./Pessoa');
 const IE = require('./IE/IEclss');
 
@@ -6888,7 +6888,7 @@ module.exports = PJ;
 
 #### **Linhas 01–02 — Importações**
 
-```javascript
+```javascript {.numberLines}
 const Pessoa = require('./Pessoa');
 const IE = require('./IE/IEclss');
 ```
@@ -6901,7 +6901,7 @@ Importam as classes necessárias para a implementação de `PJ`.
 
 #### **Linhas 04–07 — Herança e atributos privados**
 
-```javascript
+```javascript {.numberLines}
 class PJ extends Pessoa {
 
     #cnpj;
@@ -6919,7 +6919,7 @@ Os atributos privados armazenam:
 
 #### **Linhas 09–22 — Método `setCNPJ()`**
 
-```javascript
+```javascript {.numberLines}
 setCNPJ(cnpj) {
     if (cnpj) {
         if (cnpj.length < 18) {
@@ -6946,7 +6946,7 @@ Caso as validações sejam atendidas, o valor é armazenado em `#cnpj` e o méto
 
 #### **Linhas 24–26 — Método `getCNPJ()`**
 
-```javascript
+```javascript {.numberLines}
 getCNPJ() {
     return this.#cnpj;
 }
@@ -6958,7 +6958,7 @@ Retorna o CNPJ armazenado no atributo privado.
 
 #### **Linhas 28–37 — Sobrescrita de `setEmail()`**
 
-```javascript
+```javascript {.numberLines}
 setEmail(email) {
     if (email !== '') {
         if (email.includes('@')) {
@@ -6984,7 +6984,7 @@ Quando as condições são atendidas, `super.setEmail(email)` reutiliza a implem
 
 #### **Linhas 39–48 — Método `setIE()`**
 
-```javascript
+```javascript {.numberLines}
 setIE(ie) {
     if (ie instanceof IE) {
         this.#ie = ie;
@@ -7009,7 +7009,7 @@ Após a validação:
 
 #### **Linhas 50–52 — Método `getIE()`**
 
-```javascript
+```javascript {.numberLines}
 getIE() {
     return this.#ie;
 }
@@ -7021,7 +7021,7 @@ Retorna o objeto `IE` associado à Pessoa Jurídica.
 
 #### **Linha 55 — Exportação**
 
-```javascript
+```javascript {.numberLines}
 module.exports = PJ;
 ```
 
@@ -7066,7 +7066,7 @@ Além desses dados, o atributo `#pj` mantém a referência para a Pessoa Jurídi
 
 **Arquivo:** `/pessoas/IE/IEclss.js`
 
-```javascript
+```javascript {.numberLines}
 class IE {
 
     #numero;
@@ -7136,7 +7136,7 @@ module.exports = IE;
 
 #### **Linhas 01–06 — Classe e atributos privados**
 
-```javascript
+```javascript {.numberLines}
 class IE {
 
     #numero;
@@ -7153,7 +7153,7 @@ Declara a classe `IE` e seus quatro atributos privados.
 
 #### **Linhas 08–16 — Métodos `setNumero()` e `getNumero()`**
 
-```javascript
+```javascript {.numberLines}
 setNumero(numero) {
     if (numero) {
         this.#numero = numero;
@@ -7174,7 +7174,7 @@ Permitem armazenar e recuperar o número da Inscrição Estadual.
 
 #### **Linhas 20–31 — Métodos `setEstado()` e `getEstado()`**
 
-```javascript
+```javascript {.numberLines}
 setEstado(estado) {
     if (estado) {
         this.#estado = estado;
@@ -7195,7 +7195,7 @@ Permitem armazenar e recuperar o estado associado à inscrição.
 
 #### **Linhas 33–44 — Data de registro**
 
-```javascript
+```javascript {.numberLines}
 setDataRegistro(dataRegistro) {
     if (dataRegistro instanceof Date) {
         this.#dataRegistro = dataRegistro;
@@ -7216,7 +7216,7 @@ O método `setDataRegistro()` utiliza `instanceof Date` para aceitar somente obj
 
 #### **Linhas 46–57 — Relacionamento com `PJ`**
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj) {
     if (pj) {
         this.#pj = pj;
@@ -7239,7 +7239,7 @@ No fluxo utilizado neste capítulo, essa referência é preenchida automaticamen
 
 #### **Linha 60 — Exportação**
 
-```javascript
+```javascript {.numberLines}
 module.exports = IE;
 ```
 
@@ -7261,7 +7261,7 @@ Em um ambiente Node.js puro, essa API não está disponível. Para permitir a ex
 
 **Arquivo:** `/pessoas/DAOs/localStorage.mjs`
 
-```javascript
+```javascript {.numberLines}
 export const localStorage = {
     store: {},
 
@@ -7289,7 +7289,7 @@ export const localStorage = {
 
 ### **Linhas 01–02 — Objeto e armazenamento interno**
 
-```javascript
+```javascript {.numberLines}
 export const localStorage = {
     store: {},
 ```
@@ -7302,7 +7302,7 @@ A propriedade `store` funciona como o armazenamento interno da simulação.
 
 ### **Linhas 04–06 — Método `setItem()`**
 
-```javascript
+```javascript {.numberLines}
 setItem(key, value) {
     this.store[key] = value;
 }
@@ -7312,7 +7312,7 @@ Armazena um valor utilizando uma chave.
 
 Por exemplo:
 
-```javascript
+```javascript {.numberLines}
 localStorage.setItem('nome', 'Pedro');
 ```
 
@@ -7320,7 +7320,7 @@ localStorage.setItem('nome', 'Pedro');
 
 ### **Linhas 08–10 — Método `getItem()`**
 
-```javascript
+```javascript {.numberLines}
 getItem(key) {
     return this.store[key] || null;
 }
@@ -7334,7 +7334,7 @@ Caso a chave não exista, retorna `null`.
 
 ### **Linhas 12–14 — Método `removeItem()`**
 
-```javascript
+```javascript {.numberLines}
 removeItem(key) {
     delete this.store[key];
 }
@@ -7346,7 +7346,7 @@ Remove uma chave e o valor associado a ela.
 
 ### **Linhas 16–18 — Método `clear()`**
 
-```javascript
+```javascript {.numberLines}
 clear() {
     this.store = {};
 }
@@ -7401,7 +7401,7 @@ A DAO funcionará como uma camada intermediária entre o objeto de domínio e o 
 
 **Arquivo:** `/pessoas/DAOs/PJDAO.mjs`
 
-```javascript
+```javascript {.numberLines}
 import { localStorage } from './localStorage.mjs';
 import PJ from '../PJ.js';
 
@@ -7458,7 +7458,7 @@ export default class PJDAO {
 
 ### **Linhas 01–02 — Importações**
 
-```javascript
+```javascript {.numberLines}
 import { localStorage } from './localStorage.mjs';
 import PJ from '../PJ.js';
 ```
@@ -7473,7 +7473,7 @@ Observe que `localStorage` é uma **exportação nomeada**, enquanto `PJ` é imp
 
 ### **Linhas 04–11 — Classe, atributo e construtor**
 
-```javascript
+```javascript {.numberLines}
 export default class PJDAO {
 
     #pj;
@@ -7495,7 +7495,7 @@ O construtor utiliza `instanceof` para garantir que somente objetos da classe `P
 
 ### **Linhas 13–23 — Preparação dos telefones**
 
-```javascript
+```javascript {.numberLines}
 toJSON() {
     let fones = [];
 
@@ -7519,7 +7519,7 @@ Essa transformação é necessária porque os objetos da aplicação possuem mé
 
 ### **Linhas 25–39 — Construção da representação dos dados**
 
-```javascript
+```javascript {.numberLines}
 return {
     nome: this.#pj.getNome(),
     email: this.#pj.getEmail(),
@@ -7551,7 +7551,7 @@ A estrutura possui objetos aninhados para representar:
 
 ### **Linhas 42–44 — Método `saveJSON()`**
 
-```javascript
+```javascript {.numberLines}
 saveJSON() {
     localStorage.setItem('pj', JSON.stringify(this.toJSON()));
 }
@@ -7561,7 +7561,7 @@ O método realiza duas operações.
 
 Primeiro:
 
-```javascript
+```javascript {.numberLines}
 this.toJSON()
 ```
 
@@ -7569,7 +7569,7 @@ gera o objeto literal contendo os dados.
 
 Depois:
 
-```javascript
+```javascript {.numberLines}
 JSON.stringify(...)
 ```
 
@@ -7581,7 +7581,7 @@ A string é armazenada utilizando a chave `'pj'`.
 
 ### **Linhas 46–48 — Método `recoveryJSON()`**
 
-```javascript
+```javascript {.numberLines}
 recoveryJSON() {
     return JSON.parse(localStorage.getItem('pj'));
 }
@@ -7599,7 +7599,7 @@ Primeiro, `getItem('pj')` recupera a string armazenada. Depois, `JSON.parse()` c
 
 Essa distinção é fundamental.
 
-```javascript
+```javascript {.numberLines}
 const dados = pjdao.toJSON();
 ```
 
@@ -7607,7 +7607,7 @@ Nesse caso, `dados` é um **objeto JavaScript**.
 
 Já:
 
-```javascript
+```javascript {.numberLines}
 const texto = JSON.stringify(dados);
 ```
 
@@ -7700,7 +7700,7 @@ Recuperar
 
 **Arquivo:** `usaPJDAO.mjs`
 
-```javascript
+```javascript {.numberLines}
 import PJ from './pessoas/PJ.js';
 import PJDAO from './pessoas/DAOs/PJDAO.mjs';
 import Endereco from './pessoas/Endereco.js';
@@ -7759,7 +7759,7 @@ console.log(pjdao.recoveryJSON());
 
 ### **Linhas 01–05 — Importações**
 
-```javascript
+```javascript {.numberLines}
 import PJ from './pessoas/PJ.js';
 import PJDAO from './pessoas/DAOs/PJDAO.mjs';
 import Endereco from './pessoas/Endereco.js';
@@ -7773,7 +7773,7 @@ Importam todas as estruturas necessárias para o exemplo.
 
 ### **Linhas 07–11 — Criação da Pessoa Jurídica**
 
-```javascript
+```javascript {.numberLines}
 const pj = new PJ();
 
 pj.setNome('Pedro');
@@ -7789,7 +7789,7 @@ Os métodos herdados e sobrescritos continuam sendo utilizados normalmente.
 
 ### **Linhas 13–19 — Endereço**
 
-```javascript
+```javascript {.numberLines}
 const end = new Endereco();
 
 end.setLogradouro('QNM 40');
@@ -7804,7 +7804,7 @@ Cria um objeto `Endereco`, configura seus dados e o associa à Pessoa Jurídica.
 
 ### **Linhas 21–27 — Primeiro telefone**
 
-```javascript
+```javascript {.numberLines}
 const fone1 = new Telefone();
 
 fone1.setDdd('61');
@@ -7819,7 +7819,7 @@ Cria e configura o primeiro telefone e o adiciona à coleção de telefones da P
 
 ### **Linhas 29–35 — Segundo telefone**
 
-```javascript
+```javascript {.numberLines}
 const fone2 = new Telefone();
 
 fone2.setDdd('62');
@@ -7834,7 +7834,7 @@ Repete o processo para um segundo telefone, demonstrando que a Pessoa Jurídica 
 
 ### **Linhas 37–43 — Inscrição Estadual**
 
-```javascript
+```javascript {.numberLines}
 const ie = new IE();
 
 ie.setNumero('123456');
@@ -7854,7 +7854,7 @@ Ao executar `pj.setIE(ie)`, é estabelecido o relacionamento entre os dois objet
 
 ### **Linhas 45–51 — DAO, transformação e armazenamento**
 
-```javascript
+```javascript {.numberLines}
 const pjdao = new PJDAO(pj);
 
 const dados = pjdao.toJSON();
@@ -7870,7 +7870,7 @@ Cria a DAO associada à Pessoa Jurídica.
 
 ### **Linhas 53–55 — Visualização dos resultados**
 
-```javascript
+```javascript {.numberLines}
 console.log(dados);
 console.log(JSON.stringify(dados));
 console.log(pjdao.recoveryJSON());
@@ -7904,7 +7904,7 @@ As três instruções permitem comparar:
 
 Neste exemplo:
 
-```javascript
+```javascript {.numberLines}
 JSON.stringify(this.toJSON())
 ```
 
@@ -8027,13 +8027,13 @@ JavaScript permite trabalhar com esse tipo de operação utilizando recursos de 
 
 Uma função assíncrona pode ser declarada utilizando a palavra-chave:
 
-```javascript
+```javascript {.numberLines}
 async
 ```
 
 Dentro de uma função assíncrona, podemos utilizar:
 
-```javascript
+```javascript {.numberLines}
 await
 ```
 
@@ -8041,7 +8041,7 @@ para aguardar a conclusão de uma operação antes de utilizar seu resultado.
 
 Uma estrutura básica pode ser representada da seguinte forma:
 
-```javascript
+```javascript {.numberLines}
 async function exemplo() {
     const resultado = await operacaoAssincrona();
 }
@@ -8055,7 +8055,7 @@ Nesse exemplo:
 
 Também podemos declarar **métodos assíncronos dentro de classes**:
 
-```javascript
+```javascript {.numberLines}
 async metodo() {
     const resultado = await operacaoAssincrona();
 }
@@ -8071,7 +8071,7 @@ O método `setCep()` da classe `Endereco` será declarado como assíncrono porqu
 
 Para realizar a consulta ao serviço externo, utilizaremos:
 
-```javascript
+```javascript {.numberLines}
 fetch()
 ```
 
@@ -8079,7 +8079,7 @@ A função `fetch()` permite realizar requisições a recursos disponíveis por 
 
 Uma utilização simplificada pode ser representada por:
 
-```javascript
+```javascript {.numberLines}
 const resposta = await fetch(url);
 ```
 
@@ -8089,7 +8089,7 @@ Entretanto, receber uma resposta não significa que os dados já estão disponí
 
 Quando o serviço retorna dados em formato JSON, podemos processar o conteúdo utilizando:
 
-```javascript
+```javascript {.numberLines}
 const dados = await resposta.json();
 ```
 
@@ -8167,7 +8167,7 @@ Como a requisição depende de uma resposta externa, `setCep()` é declarado com
 
 **Arquivo:** `/pessoas/ENDERECO/Endereco.mjs`
 
-```javascript
+```javascript {.numberLines}
 export default class Endereco {
     #cep;
     #logradouro;
@@ -8225,7 +8225,7 @@ export default class Endereco {
 
 ### **Linhas 01–06 — Classe e atributos privados**
 
-```javascript
+```javascript {.numberLines}
 export default class Endereco {
     #cep;
     #logradouro;
@@ -8236,7 +8236,7 @@ export default class Endereco {
 
 A classe `Endereco` é declarada utilizando:
 
-```javascript
+```javascript {.numberLines}
 export default class Endereco
 ```
 
@@ -8258,7 +8258,7 @@ Essa estratégia aplica o conceito de **encapsulamento**, impedindo que os valor
 
 ### **Linhas 08–11 — Método assíncrono e requisição**
 
-```javascript
+```javascript {.numberLines}
 async setCep(cep) {
     const url = `https://viacep.com.br/ws/${cep}/json/`;
 
@@ -8267,7 +8267,7 @@ async setCep(cep) {
 
 O método `setCep()` é declarado utilizando:
 
-```javascript
+```javascript {.numberLines}
 async
 ```
 
@@ -8275,7 +8275,7 @@ Isso indica que o método realizará operações assíncronas e permite a utiliz
 
 A instrução:
 
-```javascript
+```javascript {.numberLines}
 const url = `https://viacep.com.br/ws/${cep}/json/`;
 ```
 
@@ -8283,13 +8283,13 @@ constrói a URL que será utilizada para realizar a consulta.
 
 O valor recebido pelo parâmetro `cep` é inserido diretamente na URL por meio de uma **Template Literal**:
 
-```javascript
+```javascript {.numberLines}
 ${cep}
 ```
 
 Em seguida:
 
-```javascript
+```javascript {.numberLines}
 fetch(url)
 ```
 
@@ -8297,7 +8297,7 @@ realiza a requisição ao serviço externo.
 
 Como essa operação não apresenta necessariamente um resultado imediato, utilizamos:
 
-```javascript
+```javascript {.numberLines}
 await
 ```
 
@@ -8305,7 +8305,7 @@ para aguardar sua conclusão antes de continuar o fluxo dependente da resposta.
 
 O resultado é armazenado na constante:
 
-```javascript
+```javascript {.numberLines}
 resposta
 ```
 
@@ -8313,7 +8313,7 @@ resposta
 
 ### **Linhas 13–15 — Verificação da resposta**
 
-```javascript
+```javascript {.numberLines}
 if (!resposta.ok) {
     throw new Error(`Erro ao buscar CEP: ${resposta.status}`);
 }
@@ -8321,7 +8321,7 @@ if (!resposta.ok) {
 
 Após receber a resposta, o código verifica a propriedade:
 
-```javascript
+```javascript {.numberLines}
 resposta.ok
 ```
 
@@ -8329,7 +8329,7 @@ Essa propriedade permite identificar se a resposta HTTP foi considerada bem-suce
 
 O operador:
 
-```javascript
+```javascript {.numberLines}
 !
 ```
 
@@ -8337,7 +8337,7 @@ representa uma negação lógica.
 
 Portanto:
 
-```javascript
+```javascript {.numberLines}
 !resposta.ok
 ```
 
@@ -8345,7 +8345,7 @@ verifica se a resposta **não foi bem-sucedida**.
 
 Caso essa condição seja verdadeira, é executada a instrução:
 
-```javascript
+```javascript {.numberLines}
 throw new Error(...)
 ```
 
@@ -8355,7 +8355,7 @@ Já `throw` é responsável por **lançar a exceção**, interrompendo o fluxo n
 
 A propriedade:
 
-```javascript
+```javascript {.numberLines}
 resposta.status
 ```
 
@@ -8365,7 +8365,7 @@ permite incluir o código de status HTTP na mensagem do erro.
 
 ### **Linha 17 — Processamento da resposta**
 
-```javascript
+```javascript {.numberLines}
 const dados = await resposta.json();
 ```
 
@@ -8373,7 +8373,7 @@ Caso a resposta seja considerada adequada, seu conteúdo será processado.
 
 O método:
 
-```javascript
+```javascript {.numberLines}
 resposta.json()
 ```
 
@@ -8381,7 +8381,7 @@ processa o corpo da resposta considerando o formato JSON.
 
 Como essa operação também é assíncrona, utiliza-se novamente:
 
-```javascript
+```javascript {.numberLines}
 await
 ```
 
@@ -8389,7 +8389,7 @@ Após a conclusão, a constante `dados` passa a referenciar a estrutura JavaScri
 
 Assim, propriedades retornadas pelo serviço poderão ser acessadas utilizando expressões como:
 
-```javascript
+```javascript {.numberLines}
 dados.cep
 dados.logradouro
 dados.bairro
@@ -8401,7 +8401,7 @@ dados.uf
 
 ### **Linhas 19–21 — Verificação do CEP**
 
-```javascript
+```javascript {.numberLines}
 if (dados.erro) {
     throw new Error("CEP não encontrado na base do ViaCEP.");
 }
@@ -8411,7 +8411,7 @@ Além de verificar a resposta HTTP, o código também verifica o conteúdo retor
 
 A condição:
 
-```javascript
+```javascript {.numberLines}
 if (dados.erro)
 ```
 
@@ -8419,7 +8419,7 @@ verifica o campo `erro` retornado pelo serviço.
 
 Caso esse campo indique que o CEP não foi localizado, uma nova exceção será lançada:
 
-```javascript
+```javascript {.numberLines}
 throw new Error("CEP não encontrado na base do ViaCEP.");
 ```
 
@@ -8431,7 +8431,7 @@ A primeira validação verifica a **resposta da requisição**, enquanto esta se
 
 ### **Linhas 23–27 — Preenchimento dos atributos**
 
-```javascript
+```javascript {.numberLines}
 this.#cep = dados.cep;
 this.#logradouro = dados.logradouro;
 this.#bairro = dados.bairro;
@@ -8443,19 +8443,19 @@ Se nenhuma das verificações anteriores lançar uma exceção, os dados retorna
 
 Cada propriedade retornada é associada ao respectivo atributo:
 
-```javascript
+```javascript {.numberLines}
 dados.cep
 ```
 
 é armazenado em:
 
-```javascript
+```javascript {.numberLines}
 this.#cep
 ```
 
 Da mesma forma:
 
-```javascript
+```javascript {.numberLines}
 dados.logradouro
 dados.bairro
 dados.localidade
@@ -8466,7 +8466,7 @@ são utilizados para preencher os demais atributos.
 
 Observe especificamente:
 
-```javascript
+```javascript {.numberLines}
 this.#cidade = dados.localidade;
 ```
 
@@ -8478,7 +8478,7 @@ A classe, portanto, não precisa utilizar exatamente os mesmos nomes adotados pe
 
 ### **Linhas 30–48 — Métodos de acesso**
 
-```javascript
+```javascript {.numberLines}
 getCep() {
     return this.#cep;
 }
@@ -8504,7 +8504,7 @@ Os métodos `get` permitem recuperar os valores armazenados nos atributos privad
 
 Como os atributos utilizam `#`, instruções externas como:
 
-```javascript
+```javascript {.numberLines}
 end.#cep
 ```
 
@@ -8512,7 +8512,7 @@ não podem ser utilizadas para acessar diretamente os dados.
 
 Por esse motivo, a classe disponibiliza métodos públicos como:
 
-```javascript
+```javascript {.numberLines}
 getCep()
 getLogradouro()
 getBairro()
@@ -8583,13 +8583,13 @@ Uma exceção permite interromper o fluxo normal da operação e informar que oc
 
 No código estudado anteriormente, isso é realizado utilizando:
 
-```javascript
+```javascript {.numberLines}
 throw new Error("CEP não encontrado na base do ViaCEP.");
 ```
 
 Essa instrução envolve dois elementos importantes:
 
-```javascript
+```javascript {.numberLines}
 new Error(...)
 ```
 
@@ -8597,7 +8597,7 @@ cria um objeto que representa o erro.
 
 Já:
 
-```javascript
+```javascript {.numberLines}
 throw
 ```
 
@@ -8609,7 +8609,7 @@ lança esse erro como uma exceção.
 
 A estrutura básica pode ser representada por:
 
-```javascript
+```javascript {.numberLines}
 if (condicaoDeErro) {
     throw new Error("Mensagem de erro");
 }
@@ -8623,7 +8623,7 @@ No método `setCep()`, temos duas situações desse tipo.
 
 A primeira verifica a resposta da requisição:
 
-```javascript
+```javascript {.numberLines}
 if (!resposta.ok) {
     throw new Error(`Erro ao buscar CEP: ${resposta.status}`);
 }
@@ -8631,7 +8631,7 @@ if (!resposta.ok) {
 
 A segunda verifica se o serviço informou que o CEP não foi encontrado:
 
-```javascript
+```javascript {.numberLines}
 if (dados.erro) {
     throw new Error("CEP não encontrado na base do ViaCEP.");
 }
@@ -8649,19 +8649,19 @@ Outra parte da aplicação pode assumir essa responsabilidade.
 
 Para isso, JavaScript disponibiliza as estruturas:
 
-```javascript
+```javascript {.numberLines}
 try
 ```
 
 e:
 
-```javascript
+```javascript {.numberLines}
 catch
 ```
 
 A estrutura básica é:
 
-```javascript
+```javascript {.numberLines}
 try {
     // operação que pode gerar uma exceção
 } catch (erro) {
@@ -8675,7 +8675,7 @@ Se uma exceção ocorrer durante essa execução, o fluxo será direcionado para
 
 O parâmetro:
 
-```javascript
+```javascript {.numberLines}
 erro
 ```
 
@@ -8683,7 +8683,7 @@ recebe o objeto associado à exceção.
 
 Assim, podemos acessar informações como:
 
-```javascript
+```javascript {.numberLines}
 erro.message
 ```
 
@@ -8748,13 +8748,13 @@ Dessa forma, `setCep()` fica responsável por **identificar e sinalizar o proble
 
 Como `setCep()` é um método assíncrono, sua chamada será realizada utilizando:
 
-```javascript
+```javascript {.numberLines}
 await
 ```
 
 A operação poderá ser colocada dentro de um bloco `try`:
 
-```javascript
+```javascript {.numberLines}
 try {
     await end.setCep("72015565");
 } catch (erro) {
@@ -8766,7 +8766,7 @@ Se `setCep()` for concluído normalmente, o fluxo continuará dentro do bloco `t
 
 Caso uma exceção seja lançada durante a operação, o fluxo será direcionado para:
 
-```javascript
+```javascript {.numberLines}
 catch (erro)
 ```
 
@@ -8858,7 +8858,7 @@ await end.setCep()
 
 **Arquivo:** `/pessoas/ENDERECO/usaEndereco.mjs`
 
-```javascript
+```javascript {.numberLines}
 import Endereco from './Endereco.mjs';
 
 async function usaEndereco() {
@@ -8888,7 +8888,7 @@ usaEndereco();
 
 ### **Linhas 01–04 — Importação, função assíncrona e objeto**
 
-```javascript
+```javascript {.numberLines}
 import Endereco from './Endereco.mjs';
 
 async function usaEndereco() {
@@ -8897,13 +8897,13 @@ async function usaEndereco() {
 
 A primeira instrução importa a classe `Endereco`:
 
-```javascript
+```javascript {.numberLines}
 import Endereco from './Endereco.mjs';
 ```
 
 Como `Endereco` foi disponibilizada utilizando:
 
-```javascript
+```javascript {.numberLines}
 export default
 ```
 
@@ -8911,7 +8911,7 @@ sua importação é realizada sem a utilização de chaves `{ }`.
 
 Em seguida, é declarada a função:
 
-```javascript
+```javascript {.numberLines}
 async function usaEndereco()
 ```
 
@@ -8921,7 +8921,7 @@ Isso será necessário porque, posteriormente, utilizaremos `await` para aguarda
 
 Dentro da função é criado um objeto da classe `Endereco`:
 
-```javascript
+```javascript {.numberLines}
 const end = new Endereco();
 ```
 
@@ -8931,14 +8931,14 @@ A constante `end` passa a referenciar o objeto que receberá os dados obtidos po
 
 ### **Linhas 06–07 — `try` e chamada assíncrona**
 
-```javascript
+```javascript {.numberLines}
 try {
     await end.setCep("72015565");
 ```
 
 O bloco:
 
-```javascript
+```javascript {.numberLines}
 try
 ```
 
@@ -8946,7 +8946,7 @@ delimita o código cuja execução poderá gerar uma exceção.
 
 Dentro dele é realizada a chamada:
 
-```javascript
+```javascript {.numberLines}
 await end.setCep("72015565");
 ```
 
@@ -8954,7 +8954,7 @@ O método `setCep()` foi declarado como assíncrono na classe `Endereco`.
 
 Por esse motivo, utilizamos:
 
-```javascript
+```javascript {.numberLines}
 await
 ```
 
@@ -8972,7 +8972,7 @@ Se a operação for concluída normalmente, o objeto `end` terá seus atributos 
 
 Entretanto, se `setCep()` executar:
 
-```javascript
+```javascript {.numberLines}
 throw new Error(...)
 ```
 
@@ -8982,7 +8982,7 @@ o fluxo normal será interrompido e a exceção será direcionada para o bloco `
 
 ### **Linhas 09–14 — Apresentação dos dados**
 
-```javascript
+```javascript {.numberLines}
 console.log("✅ Endereço carregado com sucesso:");
 console.log("CEP:", end.getCep());
 console.log("Logradouro:", end.getLogradouro());
@@ -8993,7 +8993,7 @@ console.log("UF:", end.getUf());
 
 Essas instruções somente serão alcançadas se:
 
-```javascript
+```javascript {.numberLines}
 await end.setCep("72015565");
 ```
 
@@ -9001,13 +9001,13 @@ for concluído sem lançar uma exceção.
 
 A primeira instrução apresenta uma mensagem indicando que o endereço foi carregado:
 
-```javascript
+```javascript {.numberLines}
 console.log("✅ Endereço carregado com sucesso:");
 ```
 
 Em seguida, os métodos públicos da classe são utilizados para recuperar os dados armazenados:
 
-```javascript
+```javascript {.numberLines}
 end.getCep()
 end.getLogradouro()
 end.getBairro()
@@ -9039,7 +9039,7 @@ console.log()
 
 ### **Linhas 16–18 — Captura e tratamento da exceção**
 
-```javascript
+```javascript {.numberLines}
 } catch (erro) {
     console.error("❌ Erro ao definir CEP:", erro.message);
 }
@@ -9047,13 +9047,13 @@ console.log()
 
 Caso uma exceção seja lançada durante a execução do bloco `try`, o fluxo será direcionado para:
 
-```javascript
+```javascript {.numberLines}
 catch (erro)
 ```
 
 O parâmetro:
 
-```javascript
+```javascript {.numberLines}
 erro
 ```
 
@@ -9061,19 +9061,19 @@ recebe o objeto associado à exceção.
 
 No método `setCep()`, os erros foram criados utilizando:
 
-```javascript
+```javascript {.numberLines}
 new Error(...)
 ```
 
 Por exemplo:
 
-```javascript
+```javascript {.numberLines}
 throw new Error("CEP não encontrado na base do ViaCEP.");
 ```
 
 A propriedade:
 
-```javascript
+```javascript {.numberLines}
 erro.message
 ```
 
@@ -9081,7 +9081,7 @@ permite recuperar a mensagem associada ao objeto de erro.
 
 Assim:
 
-```javascript
+```javascript {.numberLines}
 console.error("❌ Erro ao definir CEP:", erro.message);
 ```
 
@@ -9114,7 +9114,7 @@ A classe `Endereco` identifica que a operação não pôde ser concluída adequa
 
 ### **Linha 21 — Execução da função**
 
-```javascript
+```javascript {.numberLines}
 usaEndereco();
 ```
 
@@ -9236,7 +9236,7 @@ Dentro de `Endereco.setCep()`, o código verifica situações que impedem a conc
 
 Uma delas ocorre quando a resposta HTTP não é considerada bem-sucedida:
 
-```javascript
+```javascript {.numberLines}
 if (!resposta.ok) {
     throw new Error(`Erro ao buscar CEP: ${resposta.status}`);
 }
@@ -9244,7 +9244,7 @@ if (!resposta.ok) {
 
 Outra situação ocorre quando o serviço informa que o CEP não foi encontrado:
 
-```javascript
+```javascript {.numberLines}
 if (dados.erro) {
     throw new Error("CEP não encontrado na base do ViaCEP.");
 }
@@ -9260,7 +9260,7 @@ Em vez disso, ele **sinaliza o problema** lançando uma exceção.
 
 No arquivo `usaEndereco.mjs`, a chamada ao método é realizada dentro de um bloco `try`:
 
-```javascript
+```javascript {.numberLines}
 try {
     await end.setCep("72015565");
 }
@@ -9270,7 +9270,7 @@ Se `setCep()` for concluído normalmente, a execução continuará dentro do blo
 
 Caso uma exceção seja lançada, o fluxo será direcionado para:
 
-```javascript
+```javascript {.numberLines}
 catch (erro) {
     console.error("❌ Erro ao definir CEP:", erro.message);
 }
@@ -9290,7 +9290,7 @@ Essa diferença é importante.
 
 A classe `Endereco` identifica que ocorreu um problema:
 
-```javascript
+```javascript {.numberLines}
 throw new Error(...)
 ```
 
@@ -9300,7 +9300,7 @@ Seu papel é informar que a operação não pôde continuar normalmente.
 
 O arquivo `usaEndereco.mjs` captura essa situação:
 
-```javascript
+```javascript {.numberLines}
 catch (erro)
 ```
 
@@ -9308,7 +9308,7 @@ e decide o que fazer com ela.
 
 Neste exemplo, o tratamento consiste em:
 
-```javascript
+```javascript {.numberLines}
 console.error(...)
 ```
 
@@ -9353,7 +9353,7 @@ Os principais elementos utilizados no exemplo possuem funções diferentes:
 
 Esses recursos podem ser observados em um fluxo único:
 
-```javascript
+```javascript {.numberLines}
 try {
     await end.setCep("72015565");
 } catch (erro) {
@@ -9363,7 +9363,7 @@ try {
 
 O método chamado com `await` poderá internamente executar:
 
-```javascript
+```javascript {.numberLines}
 throw new Error(...)
 ```
 
@@ -9478,7 +9478,7 @@ A classe `Endereco` foi adaptada para consultar informações de endereço utili
 
 A requisição ao serviço externo foi realizada com:
 
-```javascript
+```javascript {.numberLines}
 const resposta = await fetch(url);
 ```
 
@@ -9486,7 +9486,7 @@ O uso de `await` permite aguardar a conclusão da requisição antes de utilizar
 
 Em seguida, o conteúdo retornado foi processado utilizando:
 
-```javascript
+```javascript {.numberLines}
 const dados = await resposta.json();
 ```
 
@@ -9494,7 +9494,7 @@ Os dados obtidos foram utilizados para preencher os atributos privados da classe
 
 Também foram apresentadas situações nas quais a operação não pode ser concluída normalmente. Para sinalizar esses problemas, o método `setCep()` utiliza:
 
-```javascript
+```javascript {.numberLines}
 throw new Error(...)
 ```
 
@@ -9505,7 +9505,7 @@ Duas situações foram consideradas no exemplo:
 
 No arquivo `usaEndereco.mjs`, a chamada ao método assíncrono foi realizada dentro de um bloco `try`:
 
-```javascript
+```javascript {.numberLines}
 try {
     await end.setCep("72015565");
 }
@@ -9513,13 +9513,13 @@ try {
 
 Caso uma exceção seja lançada, ela é capturada utilizando:
 
-```javascript
+```javascript {.numberLines}
 catch (erro)
 ```
 
 e sua mensagem pode ser recuperada por:
 
-```javascript
+```javascript {.numberLines}
 erro.message
 ```
 
@@ -9588,7 +9588,7 @@ O objetivo é praticar:
 
 ### Função
 
-```javascript
+```javascript {.numberLines}
 celsiusParaFahrenheit(celsius)
 ```
 
@@ -9605,13 +9605,13 @@ Onde:
 
 ### Exemplo
 
-```javascript
+```javascript {.numberLines}
 celsiusParaFahrenheit(30)
 ```
 
 ### Resultado Esperado
 
-```javascript
+```javascript {.numberLines}
 86
 ```
 
@@ -9621,7 +9621,7 @@ celsiusParaFahrenheit(30)
 
 ### Função
 
-```javascript
+```javascript {.numberLines}
 horasParaMinutos(horas)
 ```
 
@@ -9633,13 +9633,13 @@ Minutos = Horas * 60
 
 ### Exemplo
 
-```javascript
+```javascript {.numberLines}
 horasParaMinutos(2)
 ```
 
 ### Resultado Esperado
 
-```javascript
+```javascript {.numberLines}
 120
 ```
 
@@ -9649,7 +9649,7 @@ horasParaMinutos(2)
 
 ### Função
 
-```javascript
+```javascript {.numberLines}
 idadeEmDias(idade)
 ```
 
@@ -9667,13 +9667,13 @@ Dias = Idade * 365
 
 ### Exemplo
 
-```javascript
+```javascript {.numberLines}
 idadeEmDias(20)
 ```
 
 ### Resultado Esperado
 
-```javascript
+```javascript {.numberLines}
 7300
 ```
 
@@ -9683,7 +9683,7 @@ idadeEmDias(20)
 
 ### Função
 
-```javascript
+```javascript {.numberLines}
 kmParaMetros(km)
 ```
 
@@ -9695,13 +9695,13 @@ Metros = Quilômetros * 1000
 
 ### Exemplo
 
-```javascript
+```javascript {.numberLines}
 kmParaMetros(3)
 ```
 
 ### Resultado Esperado
 
-```javascript
+```javascript {.numberLines}
 3000
 ```
 
@@ -9711,7 +9711,7 @@ kmParaMetros(3)
 
 ### Função
 
-```javascript
+```javascript {.numberLines}
 consumoMedio(distancia, litros)
 ```
 
@@ -9728,13 +9728,13 @@ Onde:
 
 ### Exemplo
 
-```javascript
+```javascript {.numberLines}
 consumoMedio(500, 40)
 ```
 
 ### Resultado Esperado
 
-```javascript
+```javascript {.numberLines}
 12.5
 ```
 
@@ -9777,7 +9777,7 @@ Este arquivo deverá:
 
 # 💡 Exemplo Esperado de Execução
 
-```javascript
+```javascript {.numberLines}
 console.log(celsiusParaFahrenheit(30));
 console.log(horasParaMinutos(2));
 console.log(idadeEmDias(20));
@@ -9787,7 +9787,7 @@ console.log(consumoMedio(500, 40));
 
 ### Saída Esperada
 
-```javascript
+```javascript {.numberLines}
 86
 120
 7300
@@ -9833,7 +9833,7 @@ projeto/
 
 Crie uma classe chamada:
 
-```javascript
+```javascript {.numberLines}
 class Conversor {
 
 }
@@ -9843,7 +9843,7 @@ class Conversor {
 
 ### 1. Conversão de Temperatura
 
-```javascript
+```javascript {.numberLines}
 celsiusParaFahrenheit(celsius)
 ```
 
@@ -9855,7 +9855,7 @@ F = (9 / 5) * C + 32
 
 ### 2. Conversão de Distância
 
-```javascript
+```javascript {.numberLines}
 quilometrosParaMilhas(km)
 ```
 
@@ -9867,7 +9867,7 @@ milhas = km * 0.621371
 
 ### 3. Conversão de Tempo
 
-```javascript
+```javascript {.numberLines}
 minutosParaHoras(minutos)
 ```
 
@@ -9883,7 +9883,7 @@ horas = minutos / 60
 
 Ao final do arquivo `conversor.js`, exporte a classe:
 
-```javascript
+```javascript {.numberLines}
 export { Conversor };
 ```
 
@@ -9893,7 +9893,7 @@ export { Conversor };
 
 Importe a classe e utilize-a:
 
-```javascript
+```javascript {.numberLines}
 import { Conversor } from './conversor.js';
 
 const conversor = new Conversor();
@@ -9923,7 +9923,7 @@ Realize as seguintes conversões:
 
 ## Exemplo de Utilização
 
-```javascript
+```javascript {.numberLines}
 import { Conversor } from './conversor.js';
 
 const conversor = new Conversor();
@@ -9988,7 +9988,7 @@ projeto/
 
 Crie uma classe chamada:
 
-```javascript
+```javascript {.numberLines}
 class CarteiraDigital {
 
 }
@@ -10011,37 +10011,37 @@ A classe deve possuir os seguintes atributos privados:
 
 ### 1. Definir Titular
 
-```javascript
+```javascript {.numberLines}
 definirTitular(nome)
 ```
 
 ### 2. Consultar Titular
 
-```javascript
+```javascript {.numberLines}
 consultarTitular()
 ```
 
 ### 3. Depositar Saldo
 
-```javascript
+```javascript {.numberLines}
 depositar(valor)
 ```
 
 ### 4. Sacar Saldo
 
-```javascript
+```javascript {.numberLines}
 sacar(valor)
 ```
 
 ### 5. Consultar Saldo
 
-```javascript
+```javascript {.numberLines}
 consultarSaldo()
 ```
 
 ### 6. Exibir Informações
 
-```javascript
+```javascript {.numberLines}
 exibirInformacoes()
 ```
 Exemplo:
@@ -10055,7 +10055,7 @@ Saldo: R$ 150.00
 
 ## Exportação da Classe
 
-```javascript
+```javascript {.numberLines}
 module.exports = CarteiraDigital;
 ```
 
@@ -10063,7 +10063,7 @@ module.exports = CarteiraDigital;
 
 ## Arquivo main.js
 
-```javascript
+```javascript {.numberLines}
 const CarteiraDigital = require('./carteiraDigital');
 ```
 
@@ -10084,7 +10084,7 @@ const CarteiraDigital = require('./carteiraDigital');
 
 ## Exemplo de Utilização
 
-```javascript
+```javascript {.numberLines}
 const CarteiraDigital = require('./carteiraDigital');
 
 const carteira = new CarteiraDigital();
@@ -10146,7 +10146,7 @@ Seu papel será implementar as classes necessárias e realizar os testes para ve
 
 Crie um arquivo chamado:
 
-```javascript
+```javascript {.numberLines}
 Pessoa.js
 ```
 
@@ -10156,7 +10156,7 @@ Pessoa.js
 
 A classe deve possuir os seguintes atributos privados:
 
-```javascript
+```javascript {.numberLines}
 #nome
 #email
 ```
@@ -10165,7 +10165,7 @@ A classe deve possuir os seguintes atributos privados:
 
 ## Métodos Obrigatórios
 
-```javascript
+```javascript {.numberLines}
 setNome()
 getNome()
 
@@ -10205,7 +10205,7 @@ Deve:
 
 Crie um arquivo chamado:
 
-```javascript
+```javascript {.numberLines}
 Aluno.js
 ```
 
@@ -10215,13 +10215,13 @@ Aluno.js
 
 A classe deverá herdar da classe:
 
-```javascript
+```javascript {.numberLines}
 Pessoa
 ```
 
 utilizando:
 
-```javascript
+```javascript {.numberLines}
 extends
 ```
 
@@ -10231,7 +10231,7 @@ extends
 
 Adicionar o atributo privado:
 
-```javascript
+```javascript {.numberLines}
 #matricula
 ```
 
@@ -10241,7 +10241,7 @@ Adicionar o atributo privado:
 
 Implementar:
 
-```javascript
+```javascript {.numberLines}
 setMatricula()
 getMatricula()
 ```
@@ -10254,7 +10254,7 @@ A matrícula somente poderá ser cadastrada quando possuir algum valor.
 
 Caso contrário o método deverá retornar:
 
-```javascript
+```javascript {.numberLines}
 false
 ```
 
@@ -10264,7 +10264,7 @@ false
 
 Crie um arquivo chamado:
 
-```javascript
+```javascript {.numberLines}
 Professor.js
 ```
 
@@ -10274,7 +10274,7 @@ Professor.js
 
 A classe deverá herdar da classe:
 
-```javascript
+```javascript {.numberLines}
 Pessoa
 ```
 
@@ -10284,7 +10284,7 @@ Pessoa
 
 Adicionar:
 
-```javascript
+```javascript {.numberLines}
 #disciplina
 ```
 
@@ -10294,7 +10294,7 @@ Adicionar:
 
 Implementar:
 
-```javascript
+```javascript {.numberLines}
 setDisciplina()
 getDisciplina()
 ```
@@ -10311,7 +10311,7 @@ A disciplina não poderá ser vazia.
 
 Criar um arquivo chamado:
 
-```javascript
+```javascript {.numberLines}
 usaPessoas.js
 ```
 
@@ -10321,7 +10321,7 @@ usaPessoas.js
 
 Criar um objeto:
 
-```javascript
+```javascript {.numberLines}
 const p = new Pessoa();
 ```
 
@@ -10340,7 +10340,7 @@ Exibir os dados utilizando os métodos Getters.
 
 Criar um objeto:
 
-```javascript
+```javascript {.numberLines}
 const p2 = new Pessoa();
 ```
 
@@ -10366,7 +10366,7 @@ Email inválido
 
 Criar um objeto:
 
-```javascript
+```javascript {.numberLines}
 const a = new Aluno();
 ```
 
@@ -10400,7 +10400,7 @@ Matrícula: ""
 
 Verificar quais métodos retornam:
 
-```javascript
+```javascript {.numberLines}
 false
 ```
 
@@ -10412,7 +10412,7 @@ e exibir mensagens apropriadas.
 
 Criar um objeto:
 
-```javascript
+```javascript {.numberLines}
 const prof = new Professor();
 ```
 
@@ -10446,7 +10446,7 @@ Exibir mensagem informando erro no cadastro da disciplina.
 
 Modificar o método:
 
-```javascript
+```javascript {.numberLines}
 setEmail()
 ```
 
@@ -10458,7 +10458,7 @@ para aceitar apenas e-mails que possuam o caractere:
 
 Exemplo:
 
-```javascript
+```javascript {.numberLines}
 if(email.includes("@"))
 ```
 
@@ -10486,7 +10486,7 @@ professor.com
 
 Modificar:
 
-```javascript
+```javascript {.numberLines}
 setMatricula()
 ```
 
@@ -10502,13 +10502,13 @@ para aceitar somente matrículas com pelo menos:
 
 Criar uma nova classe:
 
-```javascript
+```javascript {.numberLines}
 Coordenador
 ```
 
 que herde de:
 
-```javascript
+```javascript {.numberLines}
 Professor
 ```
 
@@ -10516,7 +10516,7 @@ Professor
 
 ## Novo Atributo
 
-```javascript
+```javascript {.numberLines}
 #setor
 ```
 
@@ -10524,7 +10524,7 @@ Professor
 
 ## Métodos
 
-```javascript
+```javascript {.numberLines}
 setSetor()
 getSetor()
 ```
@@ -10565,13 +10565,13 @@ Qual a vantagem de utilizar atributos privados?
 
 Qual a diferença entre:
 
-```javascript
+```javascript {.numberLines}
 getNome()
 ```
 
 e
 
-```javascript
+```javascript {.numberLines}
 setNome()
 ```
 
@@ -10581,7 +10581,7 @@ setNome()
 
 O que faz a palavra-chave:
 
-```javascript
+```javascript {.numberLines}
 extends
 ```
 
@@ -10629,7 +10629,7 @@ Qual a diferença entre herança e reutilização de código por cópia?
 * Teste cada método logo após implementá-lo.
 * Utilize bastante o comando:
 
-```javascript
+```javascript {.numberLines}
 console.log()
 ```
 
@@ -10644,13 +10644,13 @@ para verificar o comportamento do programa.
 
 Implemente um menu simples utilizando:
 
-```javascript
+```javascript {.numberLines}
 prompt()
 ```
 
 ou
 
-```javascript
+```javascript {.numberLines}
 readline()
 ```
 
@@ -10973,7 +10973,7 @@ projeto/
 
 Crie um array chamado:
 
-```javascript
+```javascript {.numberLines}
 livros
 ```
 
@@ -10987,7 +10987,7 @@ Banco de Dados
 
 Exiba o conteúdo completo utilizando:
 
-```javascript
+```javascript {.numberLines}
 console.log()
 ```
 
@@ -11023,7 +11023,7 @@ Exiba:
 
 Utilize a propriedade:
 
-```javascript
+```javascript {.numberLines}
 length
 ```
 
@@ -11071,7 +11071,7 @@ Ao final da execução, o programa deverá apresentar:
 
 Utilize o comando:
 
-```javascript
+```javascript {.numberLines}
 console.log()
 ```
 
@@ -11083,7 +11083,7 @@ para exibir cada etapa do processamento.
 
 Cadastre mais três livros utilizando apenas o método:
 
-```javascript
+```javascript {.numberLines}
 push()
 ```
 
@@ -11109,19 +11109,19 @@ Livro 3: Banco de Dados
 
 Crie um segundo array chamado:
 
-```javascript
+```javascript {.numberLines}
 emprestados
 ```
 
 Remova o último livro do array `livros` utilizando:
 
-```javascript
+```javascript {.numberLines}
 pop()
 ```
 
 Adicione esse livro ao array `emprestados` utilizando:
 
-```javascript
+```javascript {.numberLines}
 push()
 ```
 
@@ -11141,13 +11141,13 @@ Ao final, exiba os dois arrays.
 
 ### 3) Qual a diferença entre:
 
-```javascript
+```javascript {.numberLines}
 push()
 ```
 
 e
 
-```javascript
+```javascript {.numberLines}
 unshift()
 ```
 
@@ -11155,13 +11155,13 @@ unshift()
 
 ### 4) Qual a diferença entre:
 
-```javascript
+```javascript {.numberLines}
 pop()
 ```
 
 e
 
-```javascript
+```javascript {.numberLines}
 shift()
 ```
 
@@ -11169,7 +11169,7 @@ shift()
 
 ### 5) Para que serve a propriedade:
 
-```javascript
+```javascript {.numberLines}
 length
 ```
 
@@ -11213,13 +11213,13 @@ length
 
 Implemente um menu simples utilizando:
 
-```javascript
+```javascript {.numberLines}
 prompt()
 ```
 
 ou
 
-```javascript
+```javascript {.numberLines}
 readline()
 ```
 
@@ -11469,7 +11469,7 @@ Implemente os seguintes métodos.
 
 Na classe **Cliente**:
 
-```javascript
+```javascript {.numberLines}
 listarAnimais()
 ```
 
@@ -11487,7 +11487,7 @@ Animais:
 
 Na classe **Animal**, implemente:
 
-```javascript
+```javascript {.numberLines}
 listarVeterinarios()
 ```
 
@@ -11596,7 +11596,7 @@ projeto/
 
 Crie um array chamado:
 
-```javascript
+```javascript {.numberLines}
 alunos
 ```
 
@@ -11614,7 +11614,7 @@ Gabriel
 
 Em seguida, exiba todo o conteúdo utilizando:
 
-```javascript
+```javascript {.numberLines}
 console.log()
 ```
 
@@ -11664,7 +11664,7 @@ Observe que essa estrutura executa o bloco antes de verificar a condição.
 
 Percorra o array utilizando:
 
-```javascript
+```javascript {.numberLines}
 for...of
 ```
 
@@ -11739,7 +11739,7 @@ Ana
 
 Crie um segundo array chamado:
 
-```javascript
+```javascript {.numberLines}
 aprovados
 ```
 
@@ -11767,7 +11767,7 @@ Ao final, exiba os dois arrays.
 
 ### 4) Para que serve a propriedade:
 
-```javascript
+```javascript {.numberLines}
 length
 ```
 
@@ -11944,7 +11944,7 @@ Adicione os novos atributos como **atributos privados**.
 
 Exemplo de estrutura:
 
-```javascript
+```javascript {.numberLines}
 #novoAtributo;
 ```
 
@@ -11956,7 +11956,7 @@ Os novos atributos deverão seguir o mesmo padrão de encapsulamento utilizado n
 
 Atualize o método:
 
-```javascript
+```javascript {.numberLines}
 async setCep(cep)
 ```
 
@@ -11964,7 +11964,7 @@ para armazenar também os novos dados encontrados na resposta do ViaCEP.
 
 A atribuição deverá seguir o mesmo padrão já utilizado:
 
-```javascript
+```javascript {.numberLines}
 this.#cep = dados.cep;
 this.#logradouro = dados.logradouro;
 ```
@@ -11979,7 +11979,7 @@ Para cada novo atributo adicionado à classe, crie um método `get`.
 
 Exemplo:
 
-```javascript
+```javascript {.numberLines}
 getNovoAtributo() {
     return this.#novoAtributo;
 }
@@ -12001,7 +12001,7 @@ para exibir também os novos dados adicionados à classe.
 
 Utilize:
 
-```javascript
+```javascript {.numberLines}
 console.log()
 ```
 
@@ -12044,7 +12044,7 @@ Complemento: não informado
 
 Crie um método chamado:
 
-```javascript
+```javascript {.numberLines}
 mostrarEnderecoCompleto()
 ```
 
@@ -12375,7 +12375,7 @@ projeto/
 
 Crie a classe:
 
-```javascript
+```javascript {.numberLines}
 PJ
 ```
 
@@ -12390,7 +12390,7 @@ Implemente os seguintes atributos privados:
 
 Implemente os métodos:
 
-```javascript
+```javascript {.numberLines}
 setCNPJ()
 getCNPJ()
 setRazaoSocial()
@@ -12399,13 +12399,13 @@ getRazaoSocial()
 
 Os métodos `set` deverão retornar:
 
-```javascript
+```javascript {.numberLines}
 true
 ```
 
 quando o valor for aceito, e:
 
-```javascript
+```javascript {.numberLines}
 false
 ```
 
@@ -12421,7 +12421,7 @@ A classe `PJ` deverá reutilizar os métodos herdados de `Pessoa`.
 
 No arquivo de testes, um objeto `PJ` deverá utilizar, além de seus próprios métodos:
 
-```javascript
+```javascript {.numberLines}
 setNome()
 getNome()
 setEmail()
@@ -12446,7 +12446,7 @@ importe a classe `PJ`.
 
 Em seguida, altere o método:
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj)
 ```
 
@@ -12454,13 +12454,13 @@ para aceitar **somente objetos da classe `PJ`**.
 
 A validação deverá utilizar:
 
-```javascript
+```javascript {.numberLines}
 instanceof
 ```
 
 A estrutura esperada deverá seguir a seguinte lógica:
 
-```javascript
+```javascript {.numberLines}
 if (pj instanceof PJ) {
     // realizar associação
 }
@@ -12470,7 +12470,7 @@ O método deverá retornar `true` quando a associação for válida e `false` ca
 
 O método:
 
-```javascript
+```javascript {.numberLines}
 getPJ()
 ```
 
@@ -12482,13 +12482,13 @@ deverá continuar permitindo recuperar o objeto associado.
 
 A função fábrica `IEfunc()` também possui uma referência:
 
-```javascript
+```javascript {.numberLines}
 pj
 ```
 
 Altere o método:
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj)
 ```
 
@@ -12496,7 +12496,7 @@ para validar se o objeto recebido pertence à classe `PJ`.
 
 Utilize novamente:
 
-```javascript
+```javascript {.numberLines}
 instanceof
 ```
 
@@ -12508,13 +12508,13 @@ A função fábrica deverá continuar protegendo seus dados internos por meio do
 
 Realize a mesma alteração no objeto literal:
 
-```javascript
+```javascript {.numberLines}
 IEjson
 ```
 
 O método:
 
-```javascript
+```javascript {.numberLines}
 setPJ(pj)
 ```
 
@@ -12541,7 +12541,7 @@ No arquivo `main.mjs`, importe as três estruturas utilizando uma única instru�
 
 Exemplo de organização:
 
-```javascript
+```javascript {.numberLines}
 import IEclss, { IEfunc, IEjson } from './objetos/IE.mjs';
 ```
 
@@ -12577,7 +12577,7 @@ Além dos testes válidos, tente associar um objeto que **não seja uma instânc
 
 Por exemplo:
 
-```javascript
+```javascript {.numberLines}
 const objetoInvalido = {
     nome: 'Empresa Inválida'
 };
@@ -12585,7 +12585,7 @@ const objetoInvalido = {
 
 Tente utilizar esse objeto nos métodos:
 
-```javascript
+```javascript {.numberLines}
 setPJ()
 ```
 
@@ -12635,7 +12635,7 @@ Repita a consulta utilizando:
 
 Para apresentar a data, utilize:
 
-```javascript
+```javascript {.numberLines}
 toLocaleString('pt-BR')
 ```
 
@@ -12645,7 +12645,7 @@ toLocaleString('pt-BR')
 
 Implemente uma validação no método:
 
-```javascript
+```javascript {.numberLines}
 setCNPJ()
 ```
 
@@ -12653,13 +12653,13 @@ para aceitar apenas valores com uma quantidade de caracteres previamente definid
 
 O método deverá continuar retornando apenas:
 
-```javascript
+```javascript {.numberLines}
 true
 ```
 
 ou:
 
-```javascript
+```javascript {.numberLines}
 false
 ```
 
@@ -12671,7 +12671,7 @@ Crie dois objetos diferentes da classe `PJ` e associe cada um a uma implementaç
 
 Depois, utilize:
 
-```javascript
+```javascript {.numberLines}
 getPJ()
 ```
 
@@ -12683,7 +12683,7 @@ para recuperar o objeto relacionado e exibir sua razão social.
 
 Crie uma função chamada:
 
-```javascript
+```javascript {.numberLines}
 mostrarIE(ie)
 ```
 
@@ -12698,7 +12698,7 @@ Pessoa Jurídica relacionada
 
 Teste a função utilizando:
 
-```javascript
+```javascript {.numberLines}
 IEclss
 IEfunc()
 IEjson
@@ -12718,13 +12718,13 @@ Observe se é possível reutilizar a mesma função para as três implementaçõ
 
 4. Qual a diferença entre:
 
-```javascript
+```javascript {.numberLines}
 if (pj)
 ```
 
 e:
 
-```javascript
+```javascript {.numberLines}
 if (pj instanceof PJ)
 ```
 
