@@ -41,6 +41,7 @@ jobs:
             --toc-depth=2 \
             --resource-path=.:docs:static \
             --split-level=1 \
+            --epub-cover-image=static/img/logo.png \
             -o ebook/output/ebook-teste.epub
 
       - name: Publicar EPUB como artefato
