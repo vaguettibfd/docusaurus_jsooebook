@@ -128,7 +128,7 @@ Resultado: `"a"`
 
 ---
 
-## Tipagem de Variáveis em JavaScript
+# Tipagem de Variáveis em JavaScript
 
 ## 💻 Código Completo  
 **Arquivo:** `tipovar.js`
