@@ -3,7 +3,7 @@ title: Capa
 slug: /capa
 ---
 
-# JavaScript Orientado a Objetos  
+# JavaScript e Orientação a Objetos  
 ## Da Prática à Teoria
 
 **Autor:** Leandro Vaguetti  
