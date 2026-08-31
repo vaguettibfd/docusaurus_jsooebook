@@ -3,7 +3,7 @@ title: Prefácio
 slug: /prefacio
 ---
 
-## Prefácio
+# Prefácio
 
 A programação orientada a objetos constitui um dos principais paradigmas utilizados no desenvolvimento de software contemporâneo. No entanto, sua compreensão inicial costuma representar um desafio significativo para estudantes em formação na área de computação, especialmente quando os conceitos são apresentados de forma excessivamente abstrata.
 

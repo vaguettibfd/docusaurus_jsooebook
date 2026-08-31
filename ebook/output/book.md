@@ -13,10 +13,10 @@
 Brasília – DF  
 2026
 
-## Ficha Catalográfica
+# Ficha Catalográfica
 
 Vaguetti, Leandro.  
-**JavaScript orientado a objetos: da prática à teoria** / Leandro Vaguetti. — Brasília, DF, 2026.  
+**JavaScript e Orientação a Objetos: da prática à teoria** / Leandro Vaguetti. — Brasília, DF, 2026.  
 
 1 recurso online (e-book).  
 
@@ -31,7 +31,7 @@ I. Título.
 
 CDD: 005.133
 
-## Prefácio
+# Prefácio
 
 A programação orientada a objetos constitui um dos principais paradigmas utilizados no desenvolvimento de software contemporâneo. No entanto, sua compreensão inicial costuma representar um desafio significativo para estudantes em formação na área de computação, especialmente quando os conceitos são apresentados de forma excessivamente abstrata.
 
@@ -41,7 +41,7 @@ A proposta da obra é conduzir o leitor por um percurso progressivo, partindo do
 
 Espera-se que este material contribua tanto para estudantes iniciantes quanto para docentes que buscam recursos didáticos atualizados para o ensino de programação.
 
-## Apresentação
+# Apresentação
 
 Este e-book foi concebido como um material didático voltado ao ensino de Programação Orientada a Objetos utilizando a linguagem JavaScript, com foco em cursos da área de Computação, Tecnologia da Informação e áreas afins.
 
@@ -128,7 +128,7 @@ Resultado: `"a"`
 
 ---
 
-# Tipagem de Variáveis em JavaScript
+## Tipagem de Variáveis em JavaScript
 
 ## 💻 Código Completo  
 **Arquivo:** `tipovar.js`

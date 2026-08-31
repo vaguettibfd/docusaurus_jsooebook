@@ -3,7 +3,7 @@ title: Apresentação
 slug: /apresentacao
 ---
 
-## Apresentação
+# Apresentação
 
 Este e-book foi concebido como um material didático voltado ao ensino de Programação Orientada a Objetos utilizando a linguagem JavaScript, com foco em cursos da área de Computação, Tecnologia da Informação e áreas afins.
 

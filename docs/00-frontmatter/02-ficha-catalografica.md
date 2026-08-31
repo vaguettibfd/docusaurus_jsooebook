@@ -3,10 +3,10 @@ title: Ficha Catalográfica
 slug: /ficha
 ---
 
-## Ficha Catalográfica
+# Ficha Catalográfica
 
 Vaguetti, Leandro.  
-**JavaScript orientado a objetos: da prática à teoria** / Leandro Vaguetti. — Brasília, DF, 2026.  
+**JavaScript e Orientação a Objetos: da prática à teoria** / Leandro Vaguetti. — Brasília, DF, 2026.  
 
 1 recurso online (e-book).  
 
